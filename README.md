@@ -18,6 +18,8 @@ Circomの言語リファレンスは、circom language referenceで見ること�
 
 現時点では、circom Visual Studio Code highlight syntaxとcircom Vim highlight syntaxの2つのシンタックスハイライターが利用可能です。
 
+## Trusted Setupとは
+参加したpowers of tau ceremonyの皆さんの力を借りてplonkというプロトコル上で使えるproof keyとverify keyを作成する
 
 ### 参考文献
 1. [Course Docs](https://zku.gnomio.com/course/view.php?id=8)

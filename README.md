@@ -29,3 +29,4 @@ Circomの言語リファレンスは、circom language referenceで見ること�
 5. [ZoKrates](https://github.com/Zokrates/ZoKrates)
 6. [Circom Docs](https://docs.circom.io/getting-started/installation/)
 7. [ZoKrates Docs](https://zokrates.github.io/)
+8. [snarkjs+powers of tau ceremonyでzk proofを作る](https://scrapbox.io/bitpickers/snarkjs+powers_of_tau_ceremony%E3%81%A7zk_proof%E3%82%92%E4%BD%9C%E3%82%8B)

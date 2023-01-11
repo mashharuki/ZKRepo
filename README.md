@@ -65,6 +65,9 @@ Eli Ben-Sasson、Iddo Bentov、Yinon Horeshy、Michael Riabzevは2018年にSTARK
 さらに、STARKのドキュメントはSNARKに比べて見劣りしますが、技術コミュニティは最近、この最先端技術の実装を目指す人々のために、より充実したリソース群を開発しました。  
 
 
+## Trusted Setupとは
+
+
 ### 参考文献
 1. [Course Docs](https://zku.gnomio.com/course/view.php?id=8)
 2. [zku-cohort-3](https://github.com/zku-cohort-3)
@@ -75,3 +78,5 @@ Eli Ben-Sasson、Iddo Bentov、Yinon Horeshy、Michael Riabzevは2018年にSTARK
 7. [ZoKrates Docs](https://zokrates.github.io/)
 8. [Circom installing](https://docs.circom.io/getting-started/installation/)
 9. [ZKSnark-Tutorial](https://www.samsclass.info/141/proj/C523.htm)
+10. [snarkjs+powers of tau ceremonyでzk proofを作る](https://scrapbox.io/bitpickers/snarkjs+powers_of_tau_ceremony%E3%81%A7zk_proof%E3%82%92%E4%BD%9C%E3%82%8B)
+

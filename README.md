@@ -67,6 +67,67 @@ Eli Ben-Sasson、Iddo Bentov、Yinon Horeshy、Michael Riabzevは2018年にSTARK
 
 ## Trusted Setupとは
 
+## circuitのコンパイルコマンド
+
+```bash
+npm run compile:circuit
+```
+
+result
+
+```bash
+
+warning[P1004]: File "circuit.circom" does not include pragma version. Assuming pragma version (2, 1, 2)
+
+template instances: 1
+non-linear constraints: 5
+linear constraints: 0
+public inputs: 0
+public outputs: 1
+private inputs: 2
+private outputs: 0
+wires: 8
+labels: 9
+Written successfully: ./circuit.r1cs
+Written successfully: ./circuit.sym
+Written successfully: ./circuit_js/circuit.wasm
+Everything went okay, circom safe
+```
+
+## 制約情報を表示するコマンド
+
+```bash
+npm run print:circuit
+```
+
+result
+
+```bash
+[INFO]  snarkJS: [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.a ] * [ main.a ] - [ main.b +21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[0] ] = 0
+[INFO]  snarkJS: [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[0] ] * [ main.int[0] ] - [ main.b +21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[1] ] = 0
+[INFO]  snarkJS: [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[1] ] * [ main.int[1] ] - [ main.b +21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[2] ] = 0
+[INFO]  snarkJS: [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[2] ] * [ main.int[2] ] - [ main.b +21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[3] ] = 0
+[INFO]  snarkJS: [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.int[3] ] * [ main.int[3] ] - [ 21888242871839275222246405745257275088548364400416034343698204186575808495616main.c +main.b ] = 0
+```
+
+## サーキットの情報を表示するコマンド
+
+```bash
+npm run info:circuit
+```
+
+result
+
+```bash
+[INFO]  snarkJS: Curve: bn-128
+[INFO]  snarkJS: # of Wires: 8
+[INFO]  snarkJS: # of Constraints: 5
+[INFO]  snarkJS: # of Private Inputs: 2
+[INFO]  snarkJS: # of Public Inputs: 0
+[INFO]  snarkJS: # of Labels: 9
+[INFO]  snarkJS: # of Outputs: 1
+```
+
 
 ### 参考文献
 1. [Course Docs](https://zku.gnomio.com/course/view.php?id=8)

@@ -1,3 +1,10 @@
 circuit_js
 circuit.r1cs
 circuit.sym
+**.ptau
+**.zkey
+**.wtns
+challenge_0003
+response_0003
+challenge_phase2_0003
+response_phase2_0003

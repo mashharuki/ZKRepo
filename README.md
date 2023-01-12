@@ -344,7 +344,7 @@ snarkjs powersoftau beacon pot12_0003.ptau pot12_beacon.ptau 432bef0719c9a5203f5
 下記コマンドを実行して、サーキットの証明鍵と検証鍵を生成するために利用する最終定期なptauファイルを生成する。
 
 ```bash
-snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau 
+snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau
 ```
 
 ### beaconファイル検証コマンド

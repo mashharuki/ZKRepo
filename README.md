@@ -135,7 +135,7 @@ result
 - 開始のためのコマンド
 
 ```bash
-snarkjs powersoftau new bn128 12 pot12_0000.ptau
+snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
 ```
 
 result
@@ -151,7 +151,7 @@ result
 - 1回目のコントリビューションのコマンド
 
 ```bash
-snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution"
+snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution" -v
 ```
 
 result
@@ -172,7 +172,7 @@ result
 - 2回目のコントリビューションのコマンド
 
 ```bash
-snarkjs powersoftau contribute pot12_0001.ptau pot12_0002.ptau --name="Second contribution" -e="gagaetstete"
+snarkjs powersoftau contribute pot12_0001.ptau pot12_0002.ptau --name="Second contribution" -e="gagaetstete" -v
 ```
 
 result
@@ -194,8 +194,8 @@ result
 
 ```bash
 snarkjs powersoftau export challenge pot12_0002.ptau challenge_0003
-snarkjs powersoftau challenge contribute bn128 challenge_0003 response_0003 -e="tayotuegjasdkgalgsa"
-snarkjs powersoftau import response pot12_0002.ptau response_0003 pot12_0003.ptau -n="Third contribution"
+snarkjs powersoftau challenge contribute bn128 challenge_0003 response_0003 -e="tayotuegjasdkgalgsa" -v
+snarkjs powersoftau import response pot12_0002.ptau response_0003 pot12_0003.ptau -n="Third contribution" -v
 ```
 
 - response
@@ -247,7 +247,7 @@ snarkjs powersoftau import response pot12_0002.ptau response_0003 pot12_0003.pta
 ### 第1段階のMPCセレモニーで問題が発生していないかチェックするコマンド
 
 ```bash
-snarkjs powersoftau verify pot12_0003.ptau
+snarkjs powersoftau verify pot12_0003.ptau -v
 ```
 
 result
@@ -321,7 +321,7 @@ result
 ### beaconコマンドを生成する
 
 ```bash
-snarkjs powersoftau beacon pot12_0003.ptau pot12_beacon.ptau 432bef0719c9a5203f5e3f91980a84d61e97c3edcf05ebffac1aa24ff954969d 10 -n="Final Beacon"
+snarkjs powersoftau beacon pot12_0003.ptau pot12_beacon.ptau 432bef0719c9a5203f5e3f91980a84d61e97c3edcf05ebffac1aa24ff954969d  10  -n="Final Beacon" -v
 ```
 
 - result 
@@ -344,7 +344,7 @@ snarkjs powersoftau beacon pot12_0003.ptau pot12_beacon.ptau 432bef0719c9a5203f5
 下記コマンドを実行して、サーキットの証明鍵と検証鍵を生成するために利用する最終定期なptauファイルを生成する。
 
 ```bash
-snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau
+snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau -v
 ```
 
 ### beaconファイル検証コマンド

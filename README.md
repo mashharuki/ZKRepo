@@ -609,3 +609,7 @@ ARGS:
 13. [JavaScript tutorial for Zero-Knowledge Proofs Using SnarkJS and Circom](https://hackernoon.com/javascript-tutorial-for-zero-knowledge-proofs-using-snarkjs-and-circom)
 14. [The Magic of Zero-Knowledge Proofs through the Source Code of Tornado Cash](https://hackernoon.com/the-magic-of-zero-knowledge-proofs-through-the-source-code-of-tornado-cash?ref=hackernoon.com)
 15. [zksnark-tutorial - GitHub](https://github.com/TheBojda/zksnark-tutorial?ref=hackernoon.com)
+16. [【完全保存版】ゼロ知識証明とは何か？ - Zenn](https://zenn.dev/thirdweb_jp/articles/bde586f0f56f9f)
+17. [Verifiable Credentials × ゼロ知識証明 - Zenn](https://zenn.dev/kyosuke/articles/a8a92e399e83f490e207)
+18. [zk-SNARKs の理論 - Zenn](https://zenn.dev/kyosuke/articles/a1854b9be26c01df13eb)
+19. [zk-SNARKs の原理 - Zenn](https://zenn.dev/qope/articles/f94b37ff2d9541)

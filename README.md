@@ -567,3 +567,7 @@ snarkjs groth16 prove circuit_final.zkey witness.wtns proof.json public.json
 10. [snarkjs+powers of tau ceremonyでzk proofを作る](https://scrapbox.io/bitpickers/snarkjs+powers_of_tau_ceremony%E3%81%A7zk_proof%E3%82%92%E4%BD%9C%E3%82%8B)
 11. [ゼロ知識証明入門](https://www.amazon.co.jp/%E3%82%BC%E3%83%AD%E7%9F%A5%E8%AD%98%E8%A8%BC%E6%98%8E%E5%85%A5%E9%96%80-Shoeisha-Digital-First-%E6%9C%89%E9%99%90%E8%B2%AC%E4%BB%BB%E7%9B%A3%E6%9F%BB%E6%B3%95%E4%BA%BA%E3%83%88%E3%83%BC%E3%83%9E%E3%83%84/dp/4798170992)
 12. [【npm】 snarkjs](https://www.npmjs.com/package/snarkjs)
+13. [ZK-SNARK - Qita](https://qiita.com/oggata/items/a2c8a4041eac3734f712)
+14. [ZK Poker — A Simple ZK-SNARK Circuit - Medium](https://medium.com/coinmonks/zk-poker-a-simple-zk-snark-circuit-8ec8d0c5ee52)
+15. [zksnark poker - Sample](https://github.com/glamperd/snark-example/tree/master/poker)
+16. [zkRollup - Tutorial](https://keen-noyce-c29dfa.netlify.app/)

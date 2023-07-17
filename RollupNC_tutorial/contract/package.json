@@ -25,6 +25,7 @@
   },
   "scripts": {
     "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
     "deploy:mumbai": "npx hardhat run scripts/deploy.js --network mumbai",
     "verify:mumbai": "npx hardhat verify --network mumbai 0xB90f39c6903B64d9B536515eDF940B01E20FCeC1"
   }

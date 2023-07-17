@@ -11,3 +11,15 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+## テストの実施結果
+
+```bash
+
+Verifier contract
+  Verifier test
+    ✔ should verify the proof (2889ms)
+
+
+1 passing (3s)
+```

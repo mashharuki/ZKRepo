@@ -617,3 +617,4 @@ ARGS:
 21. [Verifiable Credentials × ゼロ知識証明 - Zenn](https://zenn.dev/kyosuke/articles/a8a92e399e83f490e207)
 22. [zk-SNARKs の理論 - Zenn](https://zenn.dev/kyosuke/articles/a1854b9be26c01df13eb)
 23. [zk-SNARKs の原理 - Zenn](https://zenn.dev/qope/articles/f94b37ff2d9541)
+24. [RollupNC_tutorial - GitHub](https://github.com/mashharuki/RollupNC_tutorial)

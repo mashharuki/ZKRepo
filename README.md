@@ -618,3 +618,5 @@ ARGS:
 22. [zk-SNARKs の理論 - Zenn](https://zenn.dev/kyosuke/articles/a1854b9be26c01df13eb)
 23. [zk-SNARKs の原理 - Zenn](https://zenn.dev/qope/articles/f94b37ff2d9541)
 24. [RollupNC_tutorial - GitHub](https://github.com/mashharuki/RollupNC_tutorial)
+25. [snarkjs-react - Exmaple](https://github.com/LHerskind/snarkjs-react)
+26. [zero Knowledge proof, Circom snarkJS, example](https://www.youtube.com/watch?v=2BHdTjpYmFg)

@@ -8,7 +8,14 @@
     "snarkjs": "^0.7.0"
   },
   "scripts": {
+    "compile": "circom circuit/sample.circom --wasm --r1cs -o ./build",
+    "generate:witness": "node build/sample_js/generate_witness.js build/sample_js/sample.wasm data/input.json wtns/witness.wtns",
+    "phase1":"npx snarkjs powersoftau new bn128 12 ptau/pot12_0000.ptau -v && npx snarkjs powersoftau contribute ptau/pot12_0000.ptau ptau/pot12_0001.ptau --name=\"First contribution\" -v",
+    "phase2":"npx snarkjs powersoftau prepare phase2 ptau/pot12_0001.ptau ptau/pot12_final.ptau -v && npx snarkjs groth16 setup build/sample.r1cs ptau/pot12_final.ptau zkey/sample_0000.zkey && npx snarkjs zkey contribute zkey/sample_0000.zkey zkey/sample_0001.zkey --name=\"1st Contributor Name\" -v",
+    "generate:vkey":"npx snarkjs zkey export verificationkey zkey/sample_0001.zkey verificationkey/verification_key.json",
     "generate:proof": "node scripts/generate_proof.js",
-    "verify:proof": "node scripts/verify_proof.js"
+    "verify:proof": "node scripts/verify_proof.js",
+    "generate:sol": "npx snarkjs zkey export solidityverifier zkey/sample_0001.zkey sol/verifier.sol",
+    "generate:call": "npx snarkjs generatecall proof/public.json proof/proof.json > data/calldata.json"
   }
 }

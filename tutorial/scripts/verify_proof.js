@@ -7,7 +7,7 @@ const fs = require('fs');
 const main = async() => {
 
   // get proof & publicSignals data
-  const publicSignals = JSON.parse(fs.readFileSync("proof/publicSignals.json"));
+  const publicSignals = JSON.parse(fs.readFileSync("proof/public.json"));
   const proof = JSON.parse(fs.readFileSync("proof/proof.json"));
   // get verification key data
   const vKey = JSON.parse(fs.readFileSync("verificationkey/verification_key.json"));

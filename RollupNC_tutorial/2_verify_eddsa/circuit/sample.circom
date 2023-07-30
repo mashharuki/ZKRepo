@@ -1,6 +1,9 @@
-include "../circomlib/circuits/eddsamimc.circom";
-include "../circomlib/circuits/mimc.circom";
+include "../../node_modules/circomlib/circuits/eddsamimc.circom";
+include "../../node_modules/circomlib/circuits/mimc.circom";
 
+/**
+ * テンプレート
+ */
 template VerifyEdDSAMiMC() {
 
     // k is length of preimage

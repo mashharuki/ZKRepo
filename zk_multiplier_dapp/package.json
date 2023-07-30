@@ -1,0 +1,17 @@
+{
+  "name": "zk_multiplier_dapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "author": "mashharuki",
+  "scripts": {
+    "backend:build": "yarn workspace backend build",
+    "backend:deploy:sepolia": "yarn workspace backend deploy:sepolia",
+    "frontend:build": "yarn workspace frontend build",
+    "frontend:dev": "yarn workspace frontend dev"
+  },
+  "workspaces": [
+    "pkgs/*"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mashharuki",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "forge build",
+    "deploy:sepolia": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url sepolia"
+  }
+}

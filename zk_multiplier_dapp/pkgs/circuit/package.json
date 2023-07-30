@@ -1,0 +1,11 @@
+{
+  "name": "circuit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mashharuki",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    
+  }
+}

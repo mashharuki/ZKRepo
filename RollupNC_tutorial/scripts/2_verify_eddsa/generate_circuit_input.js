@@ -1,12 +1,15 @@
 const fs = require("fs");
-const eddsa = require("../circomlib/src/eddsa.js");
-const mimcjs = require("../circomlib/src/mimc7.js");
+const eddsa = require("circomlib/src/eddsa");
+const mimc7 = require("circomlib/src/mimc7");
 
 const preimage = [123,456,789];
-const M = mimcjs.multiHash(preimage);
+// ハッシュ化
+const M = mimc7.multiHash(preimage);
+// create private key
 const prvKey = Buffer.from('1'.toString().padStart(64,'0'), "hex");
+// create public key
 const pubKey = eddsa.prv2pub(prvKey);
-
+// sign
 const signature = eddsa.signMiMC(prvKey, M);
 
 const inputs = {
@@ -19,7 +22,7 @@ const inputs = {
 }
 
 fs.writeFileSync(
-    "./input.json",
+    "./2_verify_eddsa/data/input.json",
     JSON.stringify(inputs),
     "utf-8"
 );

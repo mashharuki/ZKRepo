@@ -651,3 +651,5 @@ ARGS:
 26. [zero Knowledge proof, Circom snarkJS, example](https://www.youtube.com/watch?v=2BHdTjpYmFg)
 27. [[WIP] rollupNC demo](https://www.youtube.com/watch?v=sm9NZ2jQxwk)
 28. [RollupNC (Rollup non-custodial) - GitHub](https://github.com/rollupnc/RollupNC)
+29. [Writing a Zero Knowledge dApp](https://medium.com/@yujiangtham/writing-a-zero-knowledge-dapp-fd7f936e2d43)
+30. [zk_example_dapp - GitHub](https://github.com/ytham/zk_example_dapp)

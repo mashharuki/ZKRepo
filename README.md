@@ -653,3 +653,4 @@ ARGS:
 28. [RollupNC (Rollup non-custodial) - GitHub](https://github.com/rollupnc/RollupNC)
 29. [Writing a Zero Knowledge dApp](https://medium.com/@yujiangtham/writing-a-zero-knowledge-dapp-fd7f936e2d43)
 30. [zk_example_dapp - GitHub](https://github.com/ytham/zk_example_dapp)
+31. [wagmi configuring-chains](https://wagmi.sh/react/providers/configuring-chains)

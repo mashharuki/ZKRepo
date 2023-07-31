@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "build": "forge build",
-    "deploy:sepolia": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url sepolia"
+    "deploy:sepolia": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url sepolia",
+    "cp:abi": "cp out/SimpleMultiplier.sol/SimpleMultiplier.json ./../frontend/src/lib/abi/."
   }
 }

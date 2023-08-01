@@ -24,6 +24,7 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-loading-indicators": "0.1.1",
     "snarkjs": "^0.6.9",
     "typescript": "5.1.6",
     "wagmi": "^0.12.1"

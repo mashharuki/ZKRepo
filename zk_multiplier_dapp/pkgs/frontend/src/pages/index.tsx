@@ -1,4 +1,5 @@
 import { ConnectWalletButton } from '@/components/ConnectWalletButton';
+import LoadingIndicator from '@/components/LoadingIndicator';
 import { executeTransaction } from '@/lib/executeTransaction';
 import { Button, Grid, Group, Input, Space, Stack, Text, Title } from '@mantine/core';
 import { notifications } from "@mantine/notifications";
@@ -14,6 +15,8 @@ import { useAccount } from 'wagmi';
 export default function Home() {
   const [input0, setInput0] = useState("");
   const [input1, setInput1] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
   // useAccount
   const { isConnected } = useAccount();
   
@@ -38,6 +41,7 @@ export default function Home() {
 
     // Send the HTTP request
     try {
+      setIsLoading(true);
       // get proof data
       const res = await axios.post("/api/generate_proof", data, config);
       notifications.show({
@@ -57,6 +61,8 @@ export default function Home() {
 
       console.log("txHash:", txHash);
 
+      setIsLoading(false);
+
       notifications.show({
         message: `Transaction succeeded! Tx Hash: ${txHash}`,
         color: "green",
@@ -65,6 +71,7 @@ export default function Home() {
     } catch (err: any) {
       const statusCode = err?.response?.status;
       const errorMsg = err?.response?.data?.error;
+      setIsLoading(false);
       notifications.show({
         message: `Error ${statusCode}: ${errorMsg}`,
         color: "red",
@@ -103,37 +110,41 @@ export default function Home() {
             <ConnectWalletButton />
           </Group>
           <Grid align="center" justify="center" mih="80vh">
-            <Grid.Col sm={8} md={6} lg={4}>
-              <Text>
-                {"Input two numbers between 0 and 5, inclusive. The two numbers must \
-                not be equal. We'll generate a ZK proof locally in the browser, and \
-                only the proof will be sent to the blockchain so that no one \
-                watching the blockchain will know the two numbers."}
-              </Text>
-              <Space h={20} />
-              {/* form Component */}
-              <form onSubmit={handleGenerateProofSendTransaction}>
-                <Stack spacing="sm">
-                  <Input.Wrapper label="Input 0">
-                    <Input 
-                      placeholder="Number between 0 and 5" 
-                      value={input0} 
-                      onChange={(e) => setInput0(e.currentTarget.value)}
-                    />
-                  </Input.Wrapper>
-                  <Input.Wrapper label="Input 1">
-                    <Input 
-                      placeholder="Number between 0 and 5" 
-                      value={input1} 
-                      onChange={(e) => setInput1(e.currentTarget.value)}
-                    />
-                  </Input.Wrapper>
-                  <Space h={10} />
-                  {/* renderSubmitButton Component */}
-                  { renderSubmitButton() }
-                </Stack>
-              </form>
-            </Grid.Col>
+            {isLoading ? (
+              <LoadingIndicator/>
+            ) : (
+              <Grid.Col sm={8} md={6} lg={4}>
+                <Text>
+                  {"Input two numbers between 0 and 5, inclusive. The two numbers must \
+                  not be equal. We'll generate a ZK proof locally in the browser, and \
+                  only the proof will be sent to the blockchain so that no one \
+                  watching the blockchain will know the two numbers."}
+                </Text>
+                <Space h={20} />
+                {/* form Component */}
+                <form onSubmit={handleGenerateProofSendTransaction}>
+                  <Stack spacing="sm">
+                    <Input.Wrapper label="Input 0">
+                      <Input 
+                        placeholder="Number between 0 and 5" 
+                        value={input0} 
+                        onChange={(e) => setInput0(e.currentTarget.value)}
+                      />
+                    </Input.Wrapper>
+                    <Input.Wrapper label="Input 1">
+                      <Input 
+                        placeholder="Number between 0 and 5" 
+                        value={input1} 
+                        onChange={(e) => setInput1(e.currentTarget.value)}
+                      />
+                    </Input.Wrapper>
+                    <Space h={10} />
+                    {/* renderSubmitButton Component */}
+                    { renderSubmitButton() }
+                  </Stack>
+                </form>
+              </Grid.Col>
+            )}
           </Grid>
         </Stack>
       </Stack>

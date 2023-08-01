@@ -1,3 +1,3 @@
 export const Addresses = {
-  SIMPLE_MULTIPLIER_ADDR: "0xd09dfe5025fb25000aa22021f7355656cd10eb17" as `0x${string}`,
+  SIMPLE_MULTIPLIER_ADDR: "0xffc2535688c5c053cf6e4c1b9452fa14c092fe45" as `0x${string}`,
 }

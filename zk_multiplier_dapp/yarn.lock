@@ -2180,6 +2180,11 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+colortranslator@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/colortranslator/-/colortranslator-1.10.2.tgz#0a02b75f8c6cf50b50feb119ddccfbce1111f7f7"
+  integrity sha512-+vAnjWTdI0Vh6fT3I+dA6DAtnLfo91TzYKjewYeZ2dHdhF8Yo5OMo47inNJdJOXwjJ9lPD0LkNeQOLU/8yyfZA==
+
 combined-stream@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
@@ -4281,6 +4286,13 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-loading-indicators@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-loading-indicators/-/react-loading-indicators-0.1.1.tgz#833c9cfe2cbd64dd5ab4d9323715379cca3384c3"
+  integrity sha512-C1kFqtc7chBR5g2vUjl3lZfU9KPfgS4PPmt6+ZSun81qkSrwct7Uc15AkOoLMNbNmJiQlop21TfB70C5KZO32A==
+  dependencies:
+    colortranslator "^1.10.2"
 
 react-remove-scroll-bar@^2.3.4:
   version "2.3.4"

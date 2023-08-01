@@ -3,10 +3,10 @@
 ## Deployed Contract
 
 - PlonkVerifier  
-  [0xa0e9f77a3e1311301e5a29aeffda73113ed316e9](https://sepolia.etherscan.io/address/0xa0e9f77a3e1311301e5a29aeffda73113ed316e9)
+  [0x9370C082dabFb847b6F4d7b3Cf9c001aDCC85d8d](https://sepolia.etherscan.io/address/0x9370C082dabFb847b6F4d7b3Cf9c001aDCC85d8d)
 
 - SimpleMultiplier  
-  [0xd09dfe5025fb25000aa22021f7355656cd10eb17](https://sepolia.etherscan.io/address/0xd09dfe5025fb25000aa22021f7355656cd10eb17)
+  [0xfFC2535688c5C053CF6E4C1B9452Fa14c092fe45](https://sepolia.etherscan.io/address/0xfFC2535688c5C053CF6E4C1B9452Fa14c092fe45)
 
 ## How to run
 

@@ -29,11 +29,23 @@
 - smartcontract verify
 
   ```bash
-  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier sourcify 0x9370C082dabFb847b6F4d7b3Cf9c001aDCC85d8d PlonkVerifier
+  export ETHERSCAN_API_KEY=<Your API Key>
   ```
 
   ```bash
-  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier sourcify 0xfFC2535688c5C053CF6E4C1B9452Fa14c092fe45 SimpleMultiplier
+  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier etherscan --etherscan-api-key $ETHERSCAN_API_KEY 0x9370C082dabFb847b6F4d7b3Cf9c001aDCC85d8d PlonkVerifier
+  ```
+
+  ```bash
+  forge verify-check piiqxjgigygk7zcbf2uqaf1ucrbarfu3pyk2hnduyzsy6r3vuf --chain-id 11155111 --verifier etherscan --etherscan-api-key $ETHERSCAN_API_KEY
+  ```
+
+  ```bash
+  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier etherscan --etherscan-api-key $ETHERSCAN_API_KEY 0xfFC2535688c5C053CF6E4C1B9452Fa14c092fe45 SimpleMultiplier --constructor-args <args>
+  ```
+
+  ```bash
+  forge verify-check digwf3qwqjptvdifgf7nngpqvyxijnywtzbjqw6g5ii8xajrtu --chain-id 11155111 --verifier etherscan --etherscan-api-key $ETHERSCAN_API_KEY
   ```
 
 - frontend build

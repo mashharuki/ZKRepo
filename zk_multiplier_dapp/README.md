@@ -26,6 +26,16 @@
   yarn backend:build
   ```
 
+- smartcontract verify
+
+  ```bash
+  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier sourcify 0x9370C082dabFb847b6F4d7b3Cf9c001aDCC85d8d PlonkVerifier
+  ```
+
+  ```bash
+  cd pkgs/backend && forge verify-contract --chain-id 11155111 --verifier sourcify 0xfFC2535688c5C053CF6E4C1B9452Fa14c092fe45 SimpleMultiplier
+  ```
+
 - frontend build
 
   ```bash

@@ -9,6 +9,7 @@
     "backend:build": "yarn workspace backend build",
     "backend:cp:abi": "yarn workspace backend cp:abi",
     "backend:deploy:sepolia": "yarn workspace backend deploy:sepolia",
+    "backend:deploy:zkatana": "yarn workspace backend deploy:zkatana",
     "frontend:build": "yarn workspace frontend build",
     "frontend:dev": "yarn workspace frontend dev",
     "circuit:compile": "yarn workspace circuit compile",

@@ -8,3 +8,4 @@ solc = "0.8.17"
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
+zkatana = "https://rpc.startale.com/zkatana"

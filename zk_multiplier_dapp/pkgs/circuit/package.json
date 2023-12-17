@@ -8,7 +8,8 @@
   "scripts": {
     "compile": "circom src/SimpleMultiplier.circom --r1cs --wasm --sym -o build",
     "generate:zkey": "snarkjs plonk setup build/SimpleMultiplier.r1cs ptau/powersOfTau28_hez_final_08.ptau zkey/proving_key.zkey",
-    "generate:verifier": "snarkjs zkey export solidityverifier zkey/proving_key.zkey ./../backend/src/PlonkVerifier.sol"
+    "generate:verifier": "snarkjs zkey export solidityverifier zkey/proving_key.zkey ./../backend/src/PlonkVerifier.sol",
+    "cp:zk": "cp zkey/proving_key.zkey ./../frontend/src/zk && cp build/SimpleMultiplier_js/SimpleMultiplier.wasm ./../frontend/src/zk"
   },
   "dependencies": {
     "snarkjs": "^0.6.9"

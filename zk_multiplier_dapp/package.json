@@ -13,7 +13,8 @@
     "frontend:dev": "yarn workspace frontend dev",
     "circuit:compile": "yarn workspace circuit compile",
     "circuit:generate:zkey": "yarn workspace circuit generate:zkey",
-    "circuit:generate:verifier": "yarn workspace circuit generate:verifier"
+    "circuit:generate:verifier": "yarn workspace circuit generate:verifier",
+    "circuit:cp:zk": "yarn workspace circuit cp:zk"
   },
   "workspaces": [
     "pkgs/*"

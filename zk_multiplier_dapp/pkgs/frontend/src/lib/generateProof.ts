@@ -8,7 +8,10 @@ import * as snarkjs from 'snarkjs';
  * @param input1 
  * @returns 
  */
-export const generateProof = async (input0: number, input1: number): Promise<any> => {
+export const generateProof = async (
+  input0: number, 
+  input1: number
+): Promise<any> => {
   console.log(`Generating vote proof with inputs: ${input0}, ${input1}`);
   
   // We need to have the naming scheme and shape of the inputs match the .circom file
@@ -17,8 +20,8 @@ export const generateProof = async (input0: number, input1: number): Promise<any
   }
 
   // Paths to the .wasm file and proving key
-  const wasmPath = path.join(process.cwd(), '../circuit/build/SimpleMultiplier_js/SimpleMultiplier.wasm');
-  const provingKeyPath = path.join(process.cwd(), '../circuit/zkey/proving_key.zkey')
+  const wasmPath = path.join(process.cwd(), './../frontend/src/zk/SimpleMultiplier.wasm');
+  const provingKeyPath = path.join(process.cwd(), './../frontend/src/zk/proving_key.zkey')
 
   try {
     // Generate a proof of the circuit and create a structure for the output signals

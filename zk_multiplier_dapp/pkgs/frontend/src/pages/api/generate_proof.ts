@@ -1,6 +1,12 @@
 import { generateProof } from '@/lib/generateProof';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+/**
+ * zk用のproofを生成するためのAPI
+ * @param req 
+ * @param res 
+ * @returns 
+ */
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,

@@ -7,7 +7,11 @@ import { sepolia } from 'wagmi/chains'
 import { publicProvider } from 'wagmi/providers/public'
 
 // We'll just be using Sepolia testnet for now
-const { chains, provider, webSocketProvider } = configureChains(
+const { 
+  chains, 
+  provider, 
+  webSocketProvider 
+} = configureChains(
   [sepolia],
   [publicProvider()],
 )

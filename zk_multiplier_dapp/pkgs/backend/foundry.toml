@@ -4,8 +4,15 @@ out = "out"
 libs = ["lib"]
 
 solc = "0.8.17"
+cache = true
+cache_path = 'cache'
+gas_reports = ['*']
+optimizer = true
+optimizer_runs = 200
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
 zkatana = "https://rpc.startale.com/zkatana"
+fujiChain = "https://api.avax-test.network/ext/bc/C/rpc"
+baseTestnet = "https://goerli.base.org"

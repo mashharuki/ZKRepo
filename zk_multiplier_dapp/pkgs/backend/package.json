@@ -9,6 +9,9 @@
     "build": "forge build",
     "deploy:sepolia": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url sepolia",
     "deploy:zkatana": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url zkatana",
+    "deploy:fuji": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url fujiChain",
+    "deploy:baseTestnet": "forge script script/SimpleMultiplier.s.sol SimpleMultiplierScript --broadcast --verify --rpc-url baseTestnet",
+    "verify:baseTestnet": "forge verify-contract --chain-id 84531 --verifier etherscan --etherscan-api-key $ETHERSCAN_API_KEY --watch --constructor-args $(cast abi-encode 'constructor(address)', '0x025755dfebe6eEF0a58cEa71ba3A417f4175CAa3' ) 0xef9310ec551024585b1a290b286276b58d795efc SimpleMultiplier",
     "cp:abi": "cp out/SimpleMultiplier.sol/SimpleMultiplier.json ./../frontend/src/lib/abi/."
   }
 }

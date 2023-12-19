@@ -33,6 +33,7 @@ export default function Home() {
       input0,
       input1,
     }
+
     const config: AxiosRequestConfig = {
       headers: {
         "Content-Type": "application/json",
@@ -44,12 +45,13 @@ export default function Home() {
       setIsLoading(true);
       // get proof data
       const res = await axios.post("/api/generate_proof", data, config);
+
       notifications.show({
         message: "Proof generated successfully! Submitting transaction...",
         color: "green",
       });
 
-      // Split out the proof and public signals from the response data
+      // get proof & publicSignals
       const { proof, publicSignals } = res.data;
 
       console.log("proof:", proof);
@@ -68,6 +70,7 @@ export default function Home() {
         color: "green",
         autoClose: false,
       });
+      
     } catch (err: any) {
       const statusCode = err?.response?.status;
       const errorMsg = err?.response?.data?.error;

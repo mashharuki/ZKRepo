@@ -663,3 +663,4 @@ ARGS:
 38. [ZKBlock のサイト](https://zkblock.app/)
 39. [Ethcon Korea 2023 "ZK Email: On-chain verification of emails using ZKP"](https://speakerdeck.com/sorasuegami/ethcon-korea-2023-zk-email-on-chain-verification-of-emails-using-zkp)
 40. [【GitHub】zkemail](https://github.com/zkemail)
+41. [【GitHub】awesome-zk](https://github.com/ventali/awesome-zk)

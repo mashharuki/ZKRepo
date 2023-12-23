@@ -664,3 +664,7 @@ ARGS:
 39. [Ethcon Korea 2023 "ZK Email: On-chain verification of emails using ZKP"](https://speakerdeck.com/sorasuegami/ethcon-korea-2023-zk-email-on-chain-verification-of-emails-using-zkp)
 40. [【GitHub】zkemail](https://github.com/zkemail)
 41. [【GitHub】awesome-zk](https://github.com/ventali/awesome-zk)
+42. [【GitHub】zkWebAuthn](https://github.com/zkwebauthn)
+43. [ZKAttest：WebAuthn の改良](https://tech.hashport.io/3356/)
+44. [【GitHub】webauthn-halo2](https://github.com/zkwebauthn/webauthn-halo2/tree/main)
+45. [ZK Face ID Wallet](https://hackmd.io/@knownothing/zk-face-id)

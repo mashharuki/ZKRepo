@@ -7,6 +7,12 @@
 
 数学の技術を利用して、秘匿情報を外部に提示することなくその情報を保持していることを証明する技術のこと。
 
+## 応用例
+
+- 匿名認証
+- スケーラビリティ
+- セキュリティ
+
 ## Circom とは
 
 Circom は、ゼロ知識証明の生成に利用できる算術回路を定義するための新しいドメイン特化型言語である。Circom コンパイラは、Rust で書かれた circom 言語コンパイラで、関連する制約のセットと、回路のすべてのワイヤへの有効な割り当てを効率的に計算するプログラム（C++または WebAssembly で書かれている）を含む R1CS ファイルを生成するために使用することができます。circom の主な特徴の 1 つは、プログラマがテンプレートと呼ばれるパラメータ化可能な回路を定義し、それをインスタンス化してより大きな回路を形成することができるモジュール性である。小さな個々のコンポーネントから回路を構築するという考え方は、大規模で複雑な circom 回路のテスト、レビュー、監査、または正式な検証を容易に行うことを可能にする。この点で、circom のユーザーは独自のカスタムテンプレートを作成したり、circomLib からテンプレートをインスタンス化することができる。circomLib は、コンパレータ、ハッシュ関数、デジタル署名、2 進および 10 進コンバータなど、数百の回路を数える一般公開のライブラリである。CircomLib は、実務家や開発者が一般に利用できるようになっている。
@@ -668,3 +674,6 @@ ARGS:
 43. [ZKAttest：WebAuthn の改良](https://tech.hashport.io/3356/)
 44. [【GitHub】webauthn-halo2](https://github.com/zkwebauthn/webauthn-halo2/tree/main)
 45. [ZK Face ID Wallet](https://hackmd.io/@knownothing/zk-face-id)
+46. [zk-SNARK:革新的なゼロ知識証明とその応用](https://www.gate.io/ja/learn/articles/zk-snark-innovative-zero-knowledge-proof-and-its-applications/890)
+47. [How to create a Zero Knowledge DApp: From zero to production](https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production)
+48. [【GitHub】zkSudoku sample Code](https://github.com/vplasencia/zkSudoku)

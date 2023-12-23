@@ -1,0 +1,26 @@
+{
+  "name": "zkSudoku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "author": "mashharuki",
+  "scripts": {
+    "backend:build": "yarn workspace backend build",
+    "backend:cp:abi": "yarn workspace backend cp:abi",
+    "backend:deploy:sepolia": "yarn workspace backend deploy:sepolia",
+    "backend:deploy:zkatana": "yarn workspace backend deploy:zkatana",
+    "backend:deploy:fuji": "yarn workspace backend deploy:fuji",
+    "backend:deploy:baseTestnet": "yarn workspace backend deploy:baseTestnet",
+    "backend:verify:baseTestnet": "yarn workspace backend verify:baseTestnet",
+    "frontend:build": "yarn workspace frontend build",
+    "frontend:dev": "yarn workspace frontend dev",
+    "circuit:compile": "yarn workspace circuit compile",
+    "circuit:generate:zkey": "yarn workspace circuit generate:zkey",
+    "circuit:generate:verifier": "yarn workspace circuit generate:verifier",
+    "circuit:cp:zk": "yarn workspace circuit cp:zk"
+  },
+  "workspaces": [
+    "pkgs/*"
+  ]
+}

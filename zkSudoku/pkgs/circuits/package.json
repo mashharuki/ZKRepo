@@ -1,0 +1,15 @@
+{
+  "name": "circuits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  },
+  "scripts": {
+    "compile": "./scripts/compile.sh",
+    "generateWitness": "./scripts/generateWitness.sh",
+    "executeGroth16": "./scripts/executeGroth16.sh"
+  }
+}

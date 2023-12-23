@@ -678,3 +678,7 @@ ARGS:
 47. [How to create a Zero Knowledge DApp: From zero to production](https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production)
 48. [【GitHub】zkSudoku sample Code](https://github.com/vplasencia/zkSudoku)
 49. [ゼロ知識証明のユースケース](https://ethereum.org/ja/zero-knowledge-proofs/#use-cases-for-zero-knowledge-proofs)
+50. [Sui Docs Zklogin](https://sui.io/zklogin)
+51. [ZkLogin Docs](https://docs.sui.io/concepts/cryptography/zklogin/zklogin-example)
+52. [ZkLogin Example demo](https://sui-zklogin.vercel.app/)
+53. [【GitHub】ZkLogin Example demo](https://github.com/mashharuki/sui-zklogin-demo)

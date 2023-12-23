@@ -5,11 +5,16 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "circom_tester": "^0.0.20",
     "circomlib": "^2.0.5"
   },
   "scripts": {
     "compile": "./scripts/compile.sh",
     "generateWitness": "./scripts/generateWitness.sh",
-    "executeGroth16": "./scripts/executeGroth16.sh"
+    "executeGroth16": "./scripts/executeGroth16.sh",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10"
   }
 }

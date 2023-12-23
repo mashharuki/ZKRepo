@@ -16,6 +16,7 @@
     "frontend:build": "yarn workspace frontend build",
     "frontend:dev": "yarn workspace frontend dev",
     "circuits:compile": "yarn workspace circuits executeGroth16",
+    "circuits:test": "yarn workspace circuits test",
     "circuits:cp:zk": "yarn workspace circuits cp:zk"
   },
   "workspaces": [

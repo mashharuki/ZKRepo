@@ -1,0 +1,39 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/snarkjs": "^0.7.7",
+    "circom_tester": "^0.0.20",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "test": "hardhat test",
+    "deploy:zKatana": "hardhat run scripts/deploy.ts --network zKatana",
+    "deploy:fuji": "hardhat run scripts/deploy.ts --network fuji"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "snarkjs": "0.6.9"
+  }
+}

@@ -12,7 +12,9 @@
     "compile": "./scripts/compile.sh",
     "generateWitness": "./scripts/generateWitness.sh",
     "executeGroth16": "./scripts/executeGroth16.sh",
-    "test": "mocha"
+    "test": "mocha",
+    "cp:verifier": "cp sudokuVerifier.sol ../contracts/contracts",
+    "cp:zk": "cp sudoku_js/sudoku.wasm ../contracts/zkproof && cp zkey/sudoku_final.zkey ../contracts/zkproof"
   },
   "devDependencies": {
     "chai": "^4.3.10"

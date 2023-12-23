@@ -677,3 +677,4 @@ ARGS:
 46. [zk-SNARK:革新的なゼロ知識証明とその応用](https://www.gate.io/ja/learn/articles/zk-snark-innovative-zero-knowledge-proof-and-its-applications/890)
 47. [How to create a Zero Knowledge DApp: From zero to production](https://vivianblog.hashnode.dev/how-to-create-a-zero-knowledge-dapp-from-zero-to-production)
 48. [【GitHub】zkSudoku sample Code](https://github.com/vplasencia/zkSudoku)
+49. [ゼロ知識証明のユースケース](https://ethereum.org/ja/zero-knowledge-proofs/#use-cases-for-zero-knowledge-proofs)

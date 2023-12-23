@@ -15,10 +15,8 @@
     "backend:verify:baseTestnet": "yarn workspace backend verify:baseTestnet",
     "frontend:build": "yarn workspace frontend build",
     "frontend:dev": "yarn workspace frontend dev",
-    "circuit:compile": "yarn workspace circuit compile",
-    "circuit:generate:zkey": "yarn workspace circuit generate:zkey",
-    "circuit:generate:verifier": "yarn workspace circuit generate:verifier",
-    "circuit:cp:zk": "yarn workspace circuit cp:zk"
+    "circuits:compile": "yarn workspace circuits executeGroth16",
+    "circuits:cp:zk": "yarn workspace circuits cp:zk"
   },
   "workspaces": [
     "pkgs/*"

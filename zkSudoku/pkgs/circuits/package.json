@@ -14,7 +14,7 @@
     "executeGroth16": "./scripts/executeGroth16.sh",
     "test": "mocha",
     "cp:verifier": "cp sudokuVerifier.sol ../contracts/contracts",
-    "cp:zk": "cp sudoku_js/sudoku.wasm ../contracts/zkproof && cp zkey/sudoku_final.zkey ../contracts/zkproof"
+    "cp:zk": "cp sudoku_js/sudoku.wasm ../contracts/zkproof && cp zkey/sudoku_final.zkey ../contracts/zkproof && cp sudoku_js/sudoku.wasm ../frontend/src/zk && cp zkey/sudoku_final.zkey ../frontend/src/zk"
   },
   "devDependencies": {
     "chai": "^4.3.10"

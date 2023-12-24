@@ -29,6 +29,7 @@
     "compile": "hardhat compile",
     "clean": "hardhat clean",
     "test": "hardhat test",
+    "cp:abi": "cp artifacts/contracts/Sudoku.sol/Sudoku.json ../frontend/src/lib/abi",
     "deploy:zKatana": "hardhat run scripts/deploy.ts --network zKatana",
     "deploy:fuji": "hardhat run scripts/deploy.ts --network fuji"
   },

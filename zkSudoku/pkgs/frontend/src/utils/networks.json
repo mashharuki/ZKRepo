@@ -1,0 +1,30 @@
+{
+  "selectedChain": "43113",
+  "43113": {
+    "chainId": 43113,
+    "chainName": "Avalanche Fuji",
+    "rpcUrls": ["https://api.avax-test.network/ext/bc/C/rpc"],
+    "nativeCurrency": {
+      "symbol": "AVAX"
+    },
+    "blockExplorerUrls": ["https://testnet.snowtrace.io/"]
+  },
+  "1261120": {
+    "chainId": "1261120",
+    "chainName": "Astar zkEVM Testnet",
+    "rpcUrls": ["https://rpc.zkatana.gelato.digital"],
+    "nativeCurrency": {
+      "symbol": "ETH"
+    },
+    "blockExplorerUrls": ["https://zkatana.blockscout.com/"]
+  },
+  "80001": {
+    "chainId": "80001",
+    "chainName": "Mumbai",
+    "rpcUrls": ["https://rpc-mumbai.maticvigil.com"],
+    "nativeCurrency": {
+      "symbol": "MATIC"
+    },
+    "blockExplorerUrls": ["https://mumbai.polygonscan.com/"]
+  }
+}

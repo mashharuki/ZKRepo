@@ -25,3 +25,7 @@ Generating proof...
 Verifying proof...
 Verify result: Ok(())
 ```
+
+## 出力された画像
+
+![](./pkgs/circuits/layout.png)

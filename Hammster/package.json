@@ -11,6 +11,7 @@
     "frontend:build": "yarn workspace frontend build",
     "frontend:dev": "yarn workspace frontend dev",
     "cargo:run": "cd pkgs/circuits && cargo run",
-    "cargo:build": "cd pkgs/circuits && cargo build"
+    "cargo:build": "cd pkgs/circuits && cargo build",
+    "wasm:build": "cd pkgs/circuits && wasm-pack build --target web --out-dir ../frontend/src/lib/wasm && cd .."
   }
 }

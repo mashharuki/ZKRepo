@@ -1,0 +1,16 @@
+{
+  "name": "Hammster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "pkgs/**"
+  ],
+  "scripts": {
+    "frontend:build": "yarn workspace frontend build",
+    "frontend:dev": "yarn workspace frontend dev",
+    "cargo:run": "cd pkgs/circuits && cargo run",
+    "cargo:build": "cd pkgs/circuits && cargo build"
+  }
+}

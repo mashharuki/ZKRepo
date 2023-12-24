@@ -25,6 +25,44 @@ Circom の言語リファレンスは、circom language reference で見るこ�
 
 現時点では、circom Visual Studio Code highlight syntax と circom Vim highlight syntax の 2 つのシンタックスハイライターが利用可能です。
 
+## halo2とは
+
+Halo 2はElectric Coin Company（Zcashの開発者）によって、Zcashの非効率性やセキュリティ上の問題（トラステッド・セットアップなど）を解決するために開発された。Halo 2の証明システムは、信頼されたセットアップなしでzkSNARK証明の作成と検証を可能にする一連のRustクレートによって実装されているライブラリ。
+
+回路、証明、証明/検証キーなどを生成するために作成する関数は、すべてWebAssemblyにコンパイルすることができる。
+
+## Chipsとは
+
+前節では、回路をかなり低レベルで記述した。回路を実装する場合、私たちは通常、監査性、効率性、モジュール性、表現力といった望ましい特性を目指した、より高レベルのAPIを使用する。
+
+このAPIで使用される用語と概念の一部は、集積回路の設計とレイアウトとの類似から取られている。集積回路と同様に、上記の望ましい特性は、特定の機能の効率的な組み込み済み実装を提供するチップを構成することで得やすくなる。
+
+例えば、ハッシュ関数や暗号のような特定の暗号プリミティブや、スカラー乗算やペアリングのようなアルゴリズムを実装するチップがあるかもしれない。
+
+PLONKish回路では、フィールド乗算や加算を行う標準的なゲートだけで任意の論理を構築することが可能です。しかし、カスタムゲートを使うことで、非常に大きな効率向上が得られる。
+
+私たちのAPIを使うことで、カスタムゲートの特定のセットの使い方を「知っている」チップを定義することができます。これにより、高レベル回路の実装を、カスタム・ゲートを直接使用する複雑さから切り離す抽象化レイヤーを作成します。
+
+PLONKish 回路のゲートは相対参照でセルを参照する。つまり、ゲートのセ レクタが設定されている列から相対的に、与えられたオフセットにある列と行のセ ルを参照する。オフセットがゼロでない場合、これをオフセット参照と呼ぶ（つまりオフセット参照は相対参照のサブセットである）。
+
+相対参照は、等号制約で使用される絶対参照とは対照的で、任意のセルを指すことができます。
+
+オフセット参照の動機は、構成に必要な列の数を減らし、証明のサイズを小さくすることです。もしオフセット参照がなければ、カスタムゲートによって参照される各値を保持する列が必要になり、回路の他のセルからその列に値をコピーするために等号制約を使用する必要があります。オフセット参照を使用すると、必要な列数が減るだけでなく、それらの列すべてに対して等号制約をサポートする必要がなくなるため、効率が向上します。
+
+R1CS（読者によっては馴染みがあるかもしれないが、そうでなくても気にしないでほしい）では、回路は意味的に重要な順序を持たない「ゲートの海」で構成される。一方、PLONK的回路では、オフセット参照のため、行の順序は重要である。
+
+各領域はセルの不連続なサブセットを含み、相対参照は領域内のみを指す。チップ実装の責任の一部は、オフセット参照を行うゲートが領域内の正しい位置にレイアウトされていることを保証することです。
+
+リージョンとその形状のセットが与えられたら、各リージョンをどこに（つまりどの行から）配置するかを決めるために、別のフロアプランナを使います。非常に一般的なアルゴリズムを実装したデフォルトのフロアプランナーがあるが、必要であれば、独自のフロアプランナーを書くことができる。
+
+ある行のゲートが利用可能なすべての列を使用しなかったため、フロアプランニングは一般的に行列にギャップを残す。これらの隙間は、オフセット参照を必要としないゲートによって、可能な限り埋められます。
+
+チップはルックアップテーブルを定義することもできます。同じルックアップ引数に対して複数のテーブルが定義されている場合、タグ・カラムを使用して、各行でどのテーブルが使用されるかを指定することができる。また、複数のテーブルの和でルックアップを実行することも可能である（多項式次数境界によって制限される）。
+
+## PLONKとは
+
+zkSNARKsを実現するための新しい計算手法
+
 ## Zero-Knowledge Proofs: STARKs vs SNARKs
 
 ゼロ知識証明技術は、Ethereum にプライバシーをもたらします。現在、市場で最も魅力的なゼロ知識証明技術は、zk-STARK と zk-SNARK の 2 つです。
@@ -682,3 +720,12 @@ ARGS:
 51. [ZkLogin Docs](https://docs.sui.io/concepts/cryptography/zklogin/zklogin-example)
 52. [ZkLogin Example demo](https://sui-zklogin.vercel.app/)
 53. [【GitHub】ZkLogin Example demo](https://github.com/mashharuki/sui-zklogin-demo)
+54. [Awesome Zero Knowledge - GitHub](https://github.com/ventali/awesome-zk)
+55. [ZK Basics Cheatsheet - GitHub](https://github.com/baro77/ZKbasicsCS)
+56. [zkp-app-boilerplate - GitHub](https://github.com/mashharuki/zkp-app-boilerplate)
+57. [Halo2で使われている最新のzk-SNARKプロトコルPLONKの数学的解説](https://tech.hashport.io/3711/)
+58. [Halo2 Learning Course](https://learn.0xparc.org/materials/halo2/learning-group-1/cost-model)
+59. [Building a Zero Knowledge web app with Halo 2 and Wasm (part 1)](https://medium.com/@yujiangtham/building-a-zero-knowledge-web-app-with-halo-2-and-wasm-part-1-80858c8d16ee)
+60. [https://hammster.vercel.app/](https://hammster.vercel.app/)
+61. [【GitHub】 Hammster](https://github.com/ytham/hammster)
+62. [Halo2 - Docs](https://zcash.github.io/halo2/user/simple-example.html)

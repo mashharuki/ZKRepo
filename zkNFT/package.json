@@ -1,0 +1,14 @@
+{
+  "name": "zkNFT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "contracts:test": "yarn workspace contract test",
+    "contracts:compile": "yarn workspace contract compile",
+    "contracts:mint": "yarn workspace contract mint"
+  },
+  "workspaces": [
+    "pkgs/*"
+  ]
+}

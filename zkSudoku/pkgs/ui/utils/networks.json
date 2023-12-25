@@ -1,0 +1,39 @@
+{
+  "selectedChain": "43113",
+  "1337": {
+    "chainId": "1337",
+    "chainName": "Localhost 8545",
+    "rpcUrls": ["http://localhost:8545"],
+    "nativeCurrency": {
+      "symbol": "ETH"
+    },
+    "blockExplorerUrls": []
+  },
+  "11155111": {
+    "chainId": "11155111",
+    "chainName": "Sepolia",
+    "rpcUrls": ["https://eth-sepolia.g.alchemy.com/v2/"],
+    "nativeCurrency": {
+      "symbol": "ETH"
+    },
+    "blockExplorerUrls": ["https://sepolia.etherscan.io/"]
+  },
+  "80001": {
+    "chainId": "80001",
+    "chainName": "Mumbai",
+    "rpcUrls": ["https://rpc-mumbai.maticvigil.com"],
+    "nativeCurrency": {
+      "symbol": "MATIC"
+    },
+    "blockExplorerUrls": ["https://mumbai.polygonscan.com/"]
+  },
+  "43113": {
+    "chainId": "43113",
+    "chainName": "Avalanche Fuji",
+    "rpcUrls": ["https://api.avax-test.network/ext/bc/C/rpc"],
+    "nativeCurrency": {
+      "symbol": "AVAX"
+    },
+    "blockExplorerUrls": ["https://testnet.snowtrace.io/"]
+  }
+}

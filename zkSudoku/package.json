@@ -16,6 +16,8 @@
     "contracts:verify:baseTestnet": "yarn workspace contracts verify:baseTestnet",
     "frontend:build": "yarn workspace frontend build",
     "frontend:dev": "yarn workspace frontend dev",
+    "ui:build": "yarn workspace ui build",
+    "ui:dev": "yarn workspace ui dev",
     "circuits:compile": "yarn workspace circuits executeGroth16",
     "circuits:test": "yarn workspace circuits test",
     "circuits:cp:verifier": "yarn workspace circuits cp:verifier",

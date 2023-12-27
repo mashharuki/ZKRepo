@@ -1,0 +1,13 @@
+Invalid number of parameters
+snarkjs@0.3.13
+        Copyright (C) 2018  0kims association
+        This program comes with ABSOLUTELY NO WARRANTY;
+        This is free software, and you are welcome to redistribute it
+        under certain conditions; see the COPYING file in the official
+        repo directory at  https://github.com/iden3/snarkjs 
+
+Generates call parameters ready to be called.
+Usage: 
+        snarkjs zkey export soliditycalldata <public.json> <proof.json>
+   or   snarkjs zkesc <public.json> <proof.json>
+

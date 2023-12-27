@@ -1,0 +1,12 @@
+{
+  "name": "zk_nft_dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "circuit": "pnpm -F \"circuit\""
+  },
+  "keywords": [],
+  "author": "mashharuki",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "circuit",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "compile": "./scripts/compile.sh",
+    "generateWitness": "./scripts/generateWitness.sh",
+    "executeGroth16": "./scripts/executeGroth16.sh",
+    "test": "mocha",
+    "cp:verifier": "cp PasswordHashVerifier.sol ../contracts/contracts",
+    "cp:zk": "cp PasswordHash_js/sudoku.wasm ../contracts/zk && cp zkey/PasswordHash_final.zkey ../contracts/zk && cp PasswordHash_js/PasswordHash.wasm ../frontend/src/zk && cp zkey/PasswordHash_final.zkey ../frontend/src/zk"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circom_tester": "^0.0.20",
+    "circomlib": "^2.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10"
+  }
+}

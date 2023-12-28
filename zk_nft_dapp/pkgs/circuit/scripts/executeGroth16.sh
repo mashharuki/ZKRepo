@@ -4,7 +4,7 @@
 CIRCUIT=PasswordHash
 
 # Variable to store the number of the ptau file
-PTAU=08
+PTAU=14
 
 # In case there is a circuit name as an input
 if [ "$1" ]; then

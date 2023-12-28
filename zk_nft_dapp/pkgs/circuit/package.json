@@ -8,7 +8,7 @@
     "compile": "./scripts/compile.sh",
     "generateWitness": "./scripts/generateWitness.sh",
     "executeGroth16": "./scripts/executeGroth16.sh",
-    "test": "mocha",
+    "generateInput": "node ./scripts/generateInput.js",
     "cp:verifier": "cp PasswordHashVerifier.sol ../contracts/contracts",
     "cp:zk": "cp PasswordHash_js/sudoku.wasm ../contracts/zk && cp zkey/PasswordHash_final.zkey ../contracts/zk && cp PasswordHash_js/PasswordHash.wasm ../frontend/src/zk && cp zkey/PasswordHash_final.zkey ../frontend/src/zk"
   },
@@ -17,7 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "circom_tester": "^0.0.20",
-    "circomlib": "^2.0.5"
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "0.6.9"
   },
   "devDependencies": {
     "chai": "^4.3.10"

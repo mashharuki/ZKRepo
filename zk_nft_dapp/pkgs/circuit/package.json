@@ -9,6 +9,7 @@
     "generateWitness": "./scripts/generateWitness.sh",
     "executeGroth16": "./scripts/executeGroth16.sh",
     "generateInput": "node ./scripts/generateInput.js",
+    "test": "node ./test/verify.js",
     "cp:verifier": "cp PasswordHashVerifier.sol ../contracts/contracts",
     "cp:zk": "cp PasswordHash_js/sudoku.wasm ../contracts/zk && cp zkey/PasswordHash_final.zkey ../contracts/zk && cp PasswordHash_js/PasswordHash.wasm ../frontend/src/zk && cp zkey/PasswordHash_final.zkey ../frontend/src/zk"
   },

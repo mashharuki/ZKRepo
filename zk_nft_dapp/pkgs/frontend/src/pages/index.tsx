@@ -9,6 +9,8 @@ import { ChainId } from '@biconomy/core-types';
 import Head from 'next/head';
 import { useState } from "react";
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { login, logout } from './../hooks/web3auth';
 import gameContractAbi from './../utils/abi.json';
 import {
@@ -97,6 +99,17 @@ export default function Home() {
       setLoading(true)
       console.log("==================== start ====================")
 
+      toast.info('Verifying & Minting your NFT...', {
+        position: "top-right",
+        autoClose: 15000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+       });
+
       // create ZK Proof data
       const env = await getEnv();
       const proofs = await generateProof(input0, env.SECRET_HASH);
@@ -111,10 +124,31 @@ export default function Home() {
       
       // call mintNFT method
       const transactionHash = await sendUserOp(txData);
-      console.error("tx Hash:", transactionHash)
+      console.log("tx Hash:", transactionHash)
+
+      toast.success(`Success! Here is your transaction:${transactionHash} `, {
+        position: "top-right",
+        autoClose: 18000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     
     } catch(err: any) {
       console.error("error occurred while verifying & mint NFT.. :", err)
+      toast.error(`Error occurred while verifying & mint NFT..`, {
+        position: "top-right",
+        autoClose: 18000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     } finally {
       console.log("====================  end ====================")
       setLoading(false)
@@ -204,6 +238,18 @@ export default function Home() {
             )}
           </>
         )}
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </main>
     </>
   )

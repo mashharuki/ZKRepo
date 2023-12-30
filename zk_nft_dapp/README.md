@@ -66,7 +66,25 @@
       pnpm backend run verify:fuji
       ```
 
+    - NFT をミントする
+
+      ```bash
+      pnpm backend run mint:fuji
+      ```
+
   - `frontend`側
+
+    - ビルド
+
+      ```bash
+      pnpm frontend run build
+      ```
+
+    - フロントエンド起動
+
+      ```bash
+      pnpm frontend run dev
+      ```
 
 ## デプロイ済みのコントラクト情報
 

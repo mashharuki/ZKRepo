@@ -12,7 +12,7 @@ async function main() {
   console.log(` PasswordHashVerifier deployed to ${verifier.address}`);
 
   // NFT deploy
-  const nft = await ethers.deployContract('ZKNFT', [verifier.address])
+  const nft = await ethers.deployContract('ZKNFT', ["0x63091AaAfcB761d40e364B2010b237571CDb6370"])
   await nft.deployed();
   console.log(` ZKNFT deployed to ${nft.address}`)
   console.log(` =============================================== [end]  =============================================== `)

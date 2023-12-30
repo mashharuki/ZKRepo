@@ -72,7 +72,7 @@
 
 - Fuji
 
-  - NFT: [0xc3Ed7311E7E5CDF80fa0f90eD3CED2d3Fc1A9779](https://testnet.snowtrace.io/address/0xc3Ed7311E7E5CDF80fa0f90eD3CED2d3Fc1A9779)
+  - NFT: [0xC9E2718b4916D957E0d3cc1253cce8ce91066bFC](https://testnet.snowtrace.io/address/0xC9E2718b4916D957E0d3cc1253cce8ce91066bFC)
   - Verifier: [0x63091AaAfcB761d40e364B2010b237571CDb6370](https://testnet.snowtrace.io/address/0x63091AaAfcB761d40e364B2010b237571CDb6370)
 
 ### 参考文献

@@ -37,7 +37,7 @@ contract ZKNFT is ERC721 {
    *************/
   string public constant nftName = "ZK NFT";
   string public constant description = "This is a Sample ZK NFT.";
-  string public constant nftImage = "";
+  string public constant nftImage = "https://bafkreidths6s4zg2exc5wlngmhlm5bav2xsfups7zeemee3rksbbpcx6zq.ipfs.w3s.link/";
 
   /*************
    * Variables *

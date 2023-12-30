@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "circuit": "pnpm -F \"circuit\""
+    "circuit": "pnpm -F \"circuit\"",
+    "backend": "pnpm -F \"backend\"",
+    "frontend": "pnpm -F \"frontend\""
   },
   "keywords": [],
   "author": "mashharuki",

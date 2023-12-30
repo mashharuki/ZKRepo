@@ -10,8 +10,8 @@
     "executeGroth16": "./scripts/executeGroth16.sh",
     "generateInput": "node ./scripts/generateInput.js",
     "test": "node ./test/verify.js",
-    "cp:verifier": "cp PasswordHashVerifier.sol ../contracts/contracts",
-    "cp:zk": "cp PasswordHash_js/sudoku.wasm ../contracts/zk && cp zkey/PasswordHash_final.zkey ../contracts/zk && cp PasswordHash_js/PasswordHash.wasm ../frontend/src/zk && cp zkey/PasswordHash_final.zkey ../frontend/src/zk"
+    "cp:verifier": "cp PasswordHashVerifier.sol ../backend/contracts",
+    "cp:zk": "cp PasswordHash_js/sudoku.wasm ../backend/zk && cp zkey/PasswordHash_final.zkey ../backend/zk && cp PasswordHash_js/PasswordHash.wasm ../frontend/src/zk && cp zkey/PasswordHash_final.zkey ../frontend/src/zk"
   },
   "keywords": [],
   "author": "",

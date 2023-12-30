@@ -62,21 +62,21 @@ generateInputData();
 /*
  以下、荒巻さんのサンプルスクリプト
  const snarkjs = require('snarkjs');
-const crypto = require('crypto');
-const circomlib = require('circomlib');
+  const crypto = require('crypto');
+  const circomlib = require('circomlib');
 
-const rbigint = (nbytes) => snarkjs.bigInt.leBuff2int(crypto.randomBytes(nbytes));
+  const rbigint = (nbytes) => snarkjs.bigInt.leBuff2int(crypto.randomBytes(nbytes));
 
-const pedersenHash = (data) => circomlib.babyJub.unpackPoint(circomlib.pedersenHash.hash(data))[0];
+  const pedersenHash = (data) => circomlib.babyJub.unpackPoint(circomlib.pedersenHash.hash(data))[0];
 
 
-const main = () => {
-  const secret = rbigint(31);
-  // const secret = snarkjs.bigInt.leBuff2int(Buffer.from("aaa", 'utf8'));;
-  const hash = pedersenHash(secret.leInt2Buff(31));
+  const main = () => {
+    const secret = rbigint(31);
+    // const secret = snarkjs.bigInt.leBuff2int(Buffer.from("aaa", 'utf8'));;
+    const hash = pedersenHash(secret.leInt2Buff(31));
 
-  console.log({secret, hash})
-}
+    console.log({secret, hash})
+  }
 
-main();
+  main();
  */

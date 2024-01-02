@@ -750,3 +750,5 @@ ARGS:
 67. [ALEO - HP](https://aleo.org/)
 68. [kanji-nft-zk](https://kanji-nft-zk.flyingnobita.com/)
 69. [【GitHub】nft-zk](https://github.com/mashharuki/nft-zk)
+70. [イーサリアム ZK コプロセッサ Axiom が Goerli Testnet で Axiom V2 をリリース](https://www.coinlive.com/ja/news-flash/345313)
+71. [AXIOM - Quickstart](https://docs.axiom.xyz/introduction/quickstart)

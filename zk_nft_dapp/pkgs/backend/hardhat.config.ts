@@ -8,7 +8,8 @@ const {
   PRIVATE_KEY,
   GAS_REPORT,
   COINMARKETCAP_API_KEY,
-  SNOWTRACE_API_KEY
+  SNOWTRACE_API_KEY,
+  CELO_EXPLORER_API_KEY
 } = process.env
 
 const config: HardhatUserConfig = {
@@ -27,6 +28,11 @@ const config: HardhatUserConfig = {
       chainId: 43113,
       accounts: [`${PRIVATE_KEY}`]
     },
+    alfajores: {
+      url: "https://alfajores-forno.celo-testnet.org",
+      accounts: [`${PRIVATE_KEY}`],
+      chainId: 44787
+    }
   },
   gasReporter: {
     enabled: GAS_REPORT ? true : false,
@@ -38,8 +44,19 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      avalancheFujiTestnet: SNOWTRACE_API_KEY!
+      avalancheFujiTestnet: SNOWTRACE_API_KEY!,
+      alfajores: CELO_EXPLORER_API_KEY!
     },
+    customChains: [
+      {
+          network: "alfajores",
+          chainId: 44787,
+          urls: {
+              apiURL: "https://api-alfajores.celoscan.io/api",
+              browserURL: "https://alfajores.celoscan.io",
+          },
+      },
+    ]
   }
 };
 

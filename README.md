@@ -764,3 +764,5 @@ ARGS:
 81. [GitHub - Leo Workshop ](https://github.com/AleoHQ/workshop)
 82. [Aelo - Developer Resources](https://developer.aleo.org/leo/resources)
 83. [GitHub - Aleo Snap Wallet](https://github.com/bide-dev/aleo-wallet-snap)
+84. [Aelo Docs - Create Aleo App](https://developer.aleo.org/sdk/create-aleo-app/installation)
+85. [Leo Playground](https://play.leo-lang.org/)

@@ -752,3 +752,4 @@ ARGS:
 69. [【GitHub】nft-zk](https://github.com/mashharuki/nft-zk)
 70. [イーサリアム ZK コプロセッサ Axiom が Goerli Testnet で Axiom V2 をリリース](https://www.coinlive.com/ja/news-flash/345313)
 71. [AXIOM - Quickstart](https://docs.axiom.xyz/introduction/quickstart)
+72. [Build a full-stack NFT marketplace like OpenSea from scratch using Next.js, Hardhat, RainbowKit, and Celo](https://learnweb3.io/lessons/build-a-full-stack-nft-marketplace-like-open-sea-from-scratch-using-next-js-hardhat-rainbow-kit-and-celo)

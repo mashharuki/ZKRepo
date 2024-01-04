@@ -1,0 +1,15 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "sh ./test/test_goerli.sh",
+    "compile": "forge build",
+    "deploy:goerli": "sh ./script/deploy_goerli.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

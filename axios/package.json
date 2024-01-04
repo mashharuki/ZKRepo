@@ -1,0 +1,14 @@
+{
+  "name": "axios",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "contract": "pnpm -F \"contract\"",
+    "frontend": "pnpm -F \"frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

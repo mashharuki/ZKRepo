@@ -13,13 +13,13 @@ contract AutonomousAirdropScript is Script {
 
     function run() public {
         vm.startBroadcast();
-
+        //  AutonomousAirdropコントラクトをデプロイ
         AutonomousAirdrop aa = new AutonomousAirdrop(
             AXIOM_V2_QUERY_GOERLI_MOCK_ADDR,
             5,
             QUERY_SCHEMA
         );
-
+        // UselessTokeコントラクトをデプロイ
         UselessToken ut = new UselessToken(address(aa));
         aa.updateAirdropToken(address(ut));
 

@@ -10,6 +10,9 @@ abstract contract AxiomV2Client is IAxiomV2Client {
         axiomV2QueryAddress = _axiomV2QueryAddress;
     }
 
+    /**
+     * コールバック関数
+     */
     function axiomV2Callback(
         uint64 sourceChainId,
         address callerAddr,
@@ -24,6 +27,8 @@ abstract contract AxiomV2Client is IAxiomV2Client {
         _validateAxiomV2Call(sourceChainId, callerAddr, querySchema);
         _axiomV2Callback(sourceChainId, callerAddr, querySchema, queryId, axiomResults, callbackExtraData);
     }
+
+    // 以下、2つのメソッドは継承先でオーバーライドする。
 
     function _validateAxiomV2Call(
         uint64 sourceChainId,

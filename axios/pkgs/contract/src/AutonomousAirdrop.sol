@@ -6,6 +6,7 @@ import { IERC20 } from '@openzeppelin-contracts/token/ERC20/IERC20.sol';
 import { Ownable } from '@openzeppelin-contracts/access/Ownable.sol';
 
 contract AutonomousAirdrop is AxiomV2Client, Ownable {
+
     event ClaimAirdrop(
         address indexed user,
         uint256 indexed queryId,
@@ -50,6 +51,9 @@ contract AutonomousAirdrop is AxiomV2Client, Ownable {
         emit AirdropTokenAddressUpdated(_token);
     }
 
+    /**
+     * オーバーライドしたコールバック関数
+     */
     function _axiomV2Callback(
         uint64 /* sourceChainId */,
         address callerAddr,
@@ -60,12 +64,14 @@ contract AutonomousAirdrop is AxiomV2Client, Ownable {
     ) internal virtual override {
         require(!hasClaimed[callerAddr], "Autonomous Airdrop: User has already claimed this airdrop");
 
+        // コールバックされた結果を受け取り変数を取り出す。
         // Parse results
         bytes32 eventSchema = axiomResults[0];
         address userEventAddress = address(uint160(uint256(axiomResults[1])));
         uint32 blockNumber = uint32(uint256(axiomResults[2]));
         address uniswapUniversalRouterAddr = address(uint160(uint256(axiomResults[3])));
 
+        // 条件を満たしているかチェック
         // Validate the results
         require(eventSchema == SWAP_EVENT_SCHEMA, "Autonomous Airdrop: Invalid event schema");
         require(userEventAddress == callerAddr, "Autonomous Airdrop: Invalid user address for event");
@@ -75,6 +81,7 @@ contract AutonomousAirdrop is AxiomV2Client, Ownable {
         // Transfer tokens to user
         hasClaimed[callerAddr] = true;
         uint256 numTokens = 100 * 10**18;
+        // 条件を満たしていたら送金
         token.transfer(callerAddr, numTokens);
 
         emit ClaimAirdrop(

@@ -1,5 +1,5 @@
 import { Constants } from "@/shared/constants";
-import { createWeb3Modal } from "@web3modal/wagmi/react";
+import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 import { goerli } from "viem/chains";
 import { configureChains, createConfig } from 'wagmi';
 import { CoinbaseWalletConnector } from "wagmi/connectors/coinbaseWallet";
@@ -7,6 +7,7 @@ import { InjectedConnector } from "wagmi/connectors/injected";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import { WalletConnectConnector } from "wagmi/connectors/walletConnect";
 import { publicProvider } from 'wagmi/providers/public';
+import { createClient } from 'viem'
 
 const projectId = Constants.WALLETCONNECT_PROJECT_ID!
 
@@ -23,34 +24,23 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 )
  
 const config = createConfig({
-  autoConnect: true,
+  publicClient,
   connectors: [
-    new MetaMaskConnector({ chains }),
-    new CoinbaseWalletConnector({
-      chains,
-      options: {
-        appName: 'Autonomous Airdrop',
-      },
-    }),
     new WalletConnectConnector({
       chains,
       options: {
         projectId: projectId,
       },
-    }),
-    new InjectedConnector({
-      chains,
-      options: {
-        name: 'Injected',
-        shimDisconnect: true,
-      },
-    }),
+    })
   ],
-  publicClient,
-  webSocketPublicClient,
+  webSocketPublicClient
+})
+
+const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
+createWeb3Modal({ 
+  wagmiConfig: wagmiConfig,
+  projectId,
+  chains 
 })
 
 export default config;
-
-
-createWeb3Modal({ wagmiConfig: config, projectId, chains })

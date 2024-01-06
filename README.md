@@ -776,3 +776,6 @@ ARGS:
 93. [Sarma+EVM=ZKEVM,PEXC](https://ethglobal.com/showcase/sarma-evm-zkevm-pexc-9wp7o)
 94. [BillionZKVoters](https://ethglobal.com/showcase/billionzkvoters-hw1br)
 95. [ハッカソンアイディア](https://dorahacks.io/hackathon/buidlark-taipei/aigc-ideas)
+96. [How To Build a Zero Knowledge App in Leo | Aleo Tutorials](https://www.youtube.com/watch?v=DFWTB52KRLw)
+97. [Axiom - transaction-receipts-and-logs](https://docs.axiom.xyz/developers/developer-resources/transaction-receipts-and-logs)
+98. [Axiom Cookbook](https://docs.axiom.xyz/examples/axiom-cookbook)

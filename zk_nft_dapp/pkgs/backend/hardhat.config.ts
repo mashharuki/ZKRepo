@@ -49,12 +49,12 @@ const config: HardhatUserConfig = {
     },
     customChains: [
       {
-          network: "alfajores",
-          chainId: 44787,
-          urls: {
-              apiURL: "https://api-alfajores.celoscan.io/api",
-              browserURL: "https://alfajores.celoscan.io",
-          },
+        network: "alfajores",
+        chainId: 44787,
+        urls: {
+          apiURL: "https://api-alfajores.celoscan.io/api",
+          browserURL: "https://alfajores.celoscan.io",
+        },
       },
     ]
   }

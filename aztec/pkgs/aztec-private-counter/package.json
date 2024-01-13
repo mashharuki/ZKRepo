@@ -1,0 +1,14 @@
+{
+  "name": "aztec-private-counter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "compile": "cd ./contracts/counter && aztec-nargo compile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

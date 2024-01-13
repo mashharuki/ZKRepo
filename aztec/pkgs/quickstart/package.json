@@ -1,0 +1,25 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "quickstart": "sh ./src/quick_start.sh",
+    "build": "yarn clean && tsc -b",
+    "build:dev": "tsc -b --watch",
+    "clean": "rm -rf ./dest tsconfig.tsbuildinfo",
+    "start": "pnpm run build && DEBUG='token' node ./dest/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aztec/accounts": "^0.17.0",
+    "@aztec/aztec.js": "^0.17.0",
+    "@aztec/noir-contracts": "^0.17.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}

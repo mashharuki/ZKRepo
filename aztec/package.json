@@ -1,0 +1,13 @@
+{
+  "name": "aztec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "quickstart": "pnpm -F \"quickstart\"",
+    "aztec-private-counter": "pnpm -F \"aztec-private-counter\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

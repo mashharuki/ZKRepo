@@ -785,3 +785,4 @@ ARGS:
 102. [Aztec(Aztec Network)について紹介｜チュートリアル付](https://0xmachblog.com/crypto/aztec/)
 103. [Aztec Docs - Setting up your project](https://docs.aztec.network/dev_docs/tutorials/writing_dapp/project_setup)
 104. [Aztec Tutorial](https://docs.aztec.network/dev_docs/tutorials/main)
+105. [Aztec Core Concepts](https://docs.aztec.network/dev_docs/getting_started/core-concepts)

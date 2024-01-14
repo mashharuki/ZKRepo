@@ -792,3 +792,5 @@ ARGS:
 109. [Sindri Dev Docs](https://sindri.app/docs/introduction/)
 110. [Getting Started with Sindri CLI](https://sindri.app/docs/getting-started/cli/)
 111. [Medium - Sindri](https://medium.com/@sindrilabs)
+112. [Noir Contract実装例](https://github.com/AztecProtocol/aztec-packages/tree/aztec-packages-v0.17.0/yarn-project/noir-contracts/contracts)
+113. [Aztec L2 NativeToken SmartContract](https://github.com/AztecProtocol/aztec-packages/blob/aztec-packages-v0.17.0/yarn-project/noir-contracts/contracts/token_contract/src/main.nr)

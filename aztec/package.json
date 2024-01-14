@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "quickstart": "pnpm -F \"quickstart\"",
-    "aztec-private-counter": "pnpm -F \"aztec-private-counter\""
+    "aztec-private-counter": "pnpm -F \"aztec-private-counter\"",
+    "token_contract_tutorial": "pnpm -F \"token_contract_tutorial\""
   },
   "keywords": [],
   "author": "",

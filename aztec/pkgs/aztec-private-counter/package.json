@@ -6,7 +6,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "compile": "cd ./contracts/counter && aztec-nargo compile"
+    "compile": "cd ./contracts/counter && aztec-nargo compile",
+    "generate": "cd ./contracts/counter && aztec-cli codegen target -o src/artifacts --ts",
+    "deploy": "cd ./contracts/counter && aztec-cli deploy ./src/artifacts/Counter.json --args 100 0x26fc40ccf8622e4ac4bb1132762cb3917933b1b556155b1964bbbfdd3071ff5c"
   },
   "keywords": [],
   "author": "",

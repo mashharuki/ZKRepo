@@ -794,3 +794,4 @@ ARGS:
 111. [Medium - Sindri](https://medium.com/@sindrilabs)
 112. [Noir Contract実装例](https://github.com/AztecProtocol/aztec-packages/tree/aztec-packages-v0.17.0/yarn-project/noir-contracts/contracts)
 113. [Aztec L2 NativeToken SmartContract](https://github.com/AztecProtocol/aztec-packages/blob/aztec-packages-v0.17.0/yarn-project/noir-contracts/contracts/token_contract/src/main.nr)
+114. [GitHub - Aztec testcode for SmartContractx](https://github.com/AztecProtocol/aztec-packages/blob/aztec-packages-v0.17.0/yarn-project/end-to-end/src/e2e_token_contract.test.ts)

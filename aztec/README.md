@@ -1,5 +1,9 @@
 # Aztec
 
+## 環境構築における注意事項
+
+[aztec-packages-v0.17.0](https://github.com/AztecProtocol/aztec-packages/releases/tag/aztec-packages-v0.17.0)が必要になるが非常に重いファイルになっているので直接ローカルにコピーしてくる必要あり。
+
 ## セットアップ
 
 1. dockerをインストール
@@ -59,4 +63,29 @@ aztec-cli check-deploy --contract-address $CONTRACT
 
 ```bash
 pnpm aztec-private-counter run compile
+```
+
+ABIを生成する
+
+```bash
+pnpm aztec-private-counter run generate
+```
+
+アカウント情報を取得する
+
+```bash
+aztec-cli get-accounts
+```
+
+コントラクトのデプロイ
+
+```bash
+pnpm aztec-private-counter run deploy
+```
+
+うまくいけばサンドボックスにデプロイされる。
+
+```bash
+Contract deployed at 0x1a78e7cb9562cf48e03d00851afdb324b6ba6fed27ae624b96cb6faa72757f12
+Contract partial address 0x051cd61ad1d592ae4f63bd709a388d5b9cda307b30e47275e01419a8acd16476
 ```

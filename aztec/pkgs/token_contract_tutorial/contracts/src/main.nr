@@ -346,10 +346,10 @@ contract Token {
   }
 
   unconstrained fn compute_note_hash_and_nullifier(
-    contract_address: Field, 
+    contract_address: AztecAddress, 
     nonce: Field, 
     storage_slot: Field, 
-    serialized_note: [Field; VALUE_NOTE_LEN]
+    serialized_note: [Field; TOKEN_NOTE_LEN]
   ) -> pub [Field; 4] {
     let note_header = NoteHeader::new(contract_address, nonce, storage_slot);
     if (storage_slot == 5) {

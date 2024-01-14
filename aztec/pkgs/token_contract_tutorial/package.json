@@ -6,7 +6,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "compile": "cd ./contracts/counter && aztec-nargo compile"
+    "compile": "cd ./contracts && aztec-nargo compile"
   },
   "keywords": [],
   "author": "",

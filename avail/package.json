@@ -1,0 +1,27 @@
+{
+  "name": "avail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "connect": "ts-node ./src/connect.ts",
+    "submit_data": "ts-node ./src/data_submit.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@polkadot/typegen": "10.7.2",
+    "@types/yargs": "^17.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@polkadot/api": "10.7.2",
+    "yargs": "^17.6.2"
+  }
+}

@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add dotenv
+
+PATH: 
+  /Users/harukikondo/.bun/bin:/opt/homebrew/opt/llvm/bin:/opt/homebrew/opt/openssl@3/bin:/Users/harukikondo/.local/share/solana/install/active_release/bin:/Users/harukikondo/.local/share/solana/install/active_release/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/Users/harukikondo/.bun/bin:/Users/harukikondo/Library/pnpm:/opt/homebrew/opt/llvm/bin:/opt/homebrew/opt/openssl@3/bin:/Users/harukikondo/.local/share/solana/install/active_release/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/harukikondo/.cargo/bin:/Users/harukikondo/flutter/bin:/Users/harukikondo/.foundry/bin:/Users/harukikondo/git/intmax-rollup-cli/target/release:/Users/harukikondo/flutter/bin:/Users/harukikondo/.foundry/bin:/Users/harukikondo/git/intmax-rollup-cli/target/release
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/harukikondo/Library/Caches/Yarn/v6/npm-estraverse-4.3.0-398ad3f3c5a24948be7725e83d11a7de28cdbd1d-integrity/node_modules/estraverse/LICENSE.BSD' -> '/Users/harukikondo/git/ZKRepo/avail/node_modules/@typescript-eslint/utils/node_modules/estraverse/LICENSE.BSD'
+
+npm manifest: 
+  {
+    "name": "avail",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+      "connect": "ts-node ./src/connect.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@polkadot/typegen": "10.7.2",
+      "@types/yargs": "^17.0.12",
+      "@typescript-eslint/eslint-plugin": "^5.12.0",
+      "@typescript-eslint/parser": "^5.12.0",
+      "eslint": "^8.9.0",
+      "eslint-config-google": "^0.14.0",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.5.5"
+    },
+    "dependencies": {
+      "@polkadot/api": "10.7.2",
+      "yargs": "^17.6.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

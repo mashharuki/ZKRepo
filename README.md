@@ -800,3 +800,5 @@ ARGS:
 117. [Build a Rollup With Avail](https://docs.availproject.org/build/overview/)
 118. [モジュラーチェーンの DA プロジェクト「Avail」の解説](https://www.token-economist.com/2023/11/18/avail-description/)
 119. [GtiHub Avail - TypeScript Sample](https://github.com/availproject/avail/tree/old_develop/examples/ts)
+120. [PSE Resource](https://pse.dev/resources)
+121. [Ironfish Network](https://ironfish.network/)

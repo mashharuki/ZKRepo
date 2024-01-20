@@ -802,3 +802,4 @@ ARGS:
 119. [GtiHub Avail - TypeScript Sample](https://github.com/availproject/avail/tree/old_develop/examples/ts)
 120. [PSE Resource](https://pse.dev/resources)
 121. [Ironfish Network](https://ironfish.network/)
+122. [GitHub - noir-starter](https://github.com/noir-lang/noir-starter/)

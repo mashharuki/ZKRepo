@@ -94,8 +94,13 @@
   - Verifier: [0x63091AaAfcB761d40e364B2010b237571CDb6370](https://testnet.snowtrace.io/address/0x63091AaAfcB761d40e364B2010b237571CDb6370)
 
 - Celo Testnet
+
   - NFT: [0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb](https://alfajores.celoscan.io/address/0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb)
   - Verifier: [0xAa363921A48Eac63F802C57658CdEde768B3DAe1](https://alfajores.celoscan.io/address/0xAa363921A48Eac63F802C57658CdEde768B3DAe1)
+
+- Mantle Testnet
+  - NFT: [0x8DF7e6234f76e8fAC829feF83E7520635359094C](https://explorer.testnet.mantle.xyz/address/0x8DF7e6234f76e8fAC829feF83E7520635359094C)
+  - Verifier: [0xa05Db9C31B6ffB6aB817D346E99095e1c1c8317D](https://explorer.testnet.mantle.xyz/address/0xa05Db9C31B6ffB6aB817D346E99095e1c1c8317D)
 
 ### 参考文献
 

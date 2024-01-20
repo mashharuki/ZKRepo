@@ -9,7 +9,8 @@ const {
   GAS_REPORT,
   COINMARKETCAP_API_KEY,
   SNOWTRACE_API_KEY,
-  CELO_EXPLORER_API_KEY
+  CELO_EXPLORER_API_KEY,
+  ETHERSCAN_API_KEY
 } = process.env
 
 const config: HardhatUserConfig = {
@@ -33,7 +34,7 @@ const config: HardhatUserConfig = {
       accounts: [`${PRIVATE_KEY}`],
       chainId: 44787
     },
-    "mantle-testnet": {
+    mantleTest: {
       url: "https://rpc.testnet.mantle.xyz/",
       accounts: [`${PRIVATE_KEY}`],
     }
@@ -49,7 +50,8 @@ const config: HardhatUserConfig = {
   etherscan: {
     apiKey: {
       avalancheFujiTestnet: SNOWTRACE_API_KEY!,
-      alfajores: CELO_EXPLORER_API_KEY!
+      alfajores: CELO_EXPLORER_API_KEY!,
+      mantleTest: ETHERSCAN_API_KEY!
     },
     customChains: [
       {
@@ -60,6 +62,14 @@ const config: HardhatUserConfig = {
           browserURL: "https://alfajores.celoscan.io",
         },
       },
+      {
+        network: "mantleTest",
+        chainId: 5001,
+        urls: {
+        apiURL: "https://explorer.testnet.mantle.xyz/api",
+        browserURL: "https://explorer.testnet.mantle.xyz"
+        }
+      }
     ]
   }
 };

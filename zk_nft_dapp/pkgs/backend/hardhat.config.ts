@@ -32,6 +32,10 @@ const config: HardhatUserConfig = {
       url: "https://alfajores-forno.celo-testnet.org",
       accounts: [`${PRIVATE_KEY}`],
       chainId: 44787
+    },
+    "mantle-testnet": {
+      url: "https://rpc.testnet.mantle.xyz/",
+      accounts: [`${PRIVATE_KEY}`],
     }
   },
   gasReporter: {

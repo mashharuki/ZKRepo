@@ -12,6 +12,7 @@
     "verify:fuji": "npx hardhat verify --network fuji 0xC9E2718b4916D957E0d3cc1253cce8ce91066bFC 0x63091AaAfcB761d40e364B2010b237571CDb6370",
     "deploy:alfajores": "npx hardhat run scripts/deploy.ts --network alfajores",
     "verify:alfajores": "npx hardhat verify --network alfajores 0x2B5914De5D5166eBaa423C92BAb8518c85EAA0cb 0xAa363921A48Eac63F802C57658CdEde768B3DAe1",
+    "deploy:mantle-testnet": "npx hardhat run scripts/deploy.ts --network mantle-testnet",
     "mint:fuji": "npx hardhat run scripts/mint.ts --network fuji"
   },
   "keywords": [],

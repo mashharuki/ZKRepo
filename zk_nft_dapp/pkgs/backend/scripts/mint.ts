@@ -8,7 +8,8 @@ async function main() {
   // get signer
   const signer = (await ethers.getSigners())[0];
   // NFT Address
-  const NFT_ADDRESS = "0xC9E2718b4916D957E0d3cc1253cce8ce91066bFC";
+  //const NFT_ADDRESS = "0xC9E2718b4916D957E0d3cc1253cce8ce91066bFC"; // Avalance Fuji
+  const NFT_ADDRESS = "0x8DF7e6234f76e8fAC829feF83E7520635359094C"; // Mantle Testnet
   // Get NFT Contract
   const nft = await ethers.getContractAt('ZKNFT', NFT_ADDRESS);
  
@@ -34,8 +35,7 @@ async function main() {
     ],
     [
       "0x0eb54e7c08e89be9de1972d9ac680276756917a946f74cd64f07d8bc0a85d870"
-    ]
-  );
+    ]);
   await tx.wait();
   console.log("tx logs", tx.hash)
   console.log(` =============================================== [mint:end]  =============================================== `)

@@ -6,7 +6,9 @@
   "scripts": {
     "quickstart": "pnpm -F \"quickstart\"",
     "aztec-private-counter": "pnpm -F \"aztec-private-counter\"",
-    "token_contract_tutorial": "pnpm -F \"token_contract_tutorial\""
+    "private-vote": "pnpm -F \"private-vote\"",
+    "token_contract_tutorial": "pnpm -F \"token_contract_tutorial\"",
+    "sample-dapp": "pnpm -F \"sample-dapp\""
   },
   "keywords": [],
   "author": "",

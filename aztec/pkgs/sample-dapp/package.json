@@ -1,0 +1,19 @@
+{
+  "name": "sample-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "deploy": "node src/deploy.mjs",
+    "contract:compile": "cd contracts && aztec-nargo compile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aztec/accounts": "^0.19.0",
+    "@aztec/aztec.js": "^0.19.0"
+  }
+}

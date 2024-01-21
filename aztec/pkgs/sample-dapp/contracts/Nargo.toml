@@ -1,0 +1,11 @@
+[package]
+name = "token"
+type = "contract"
+authors = [""]
+compiler_version = ">=0.18.0"
+
+[dependencies]
+aztec = { git="https://github.com/AztecProtocol/aztec-packages/", tag="aztec-packages-v0.17.0", directory="yarn-project/aztec-nr/aztec" }
+authwit = { git="https://github.com/AztecProtocol/aztec-packages/", tag="aztec-packages-v0.17.0", directory="yarn-project/aztec-nr/authwit"}
+safe_math = { git="https://github.com/AztecProtocol/aztec-packages/", tag="aztec-packages-v0.17.0", directory="yarn-project/aztec-nr/safe-math"}
+protocol_types = { git="https://github.com/AztecProtocol/aztec-packages/", tag="aztec-packages-v0.17.0", directory="yarn-project/noir-protocol-circuits/src/crates/types"}

@@ -8,6 +8,10 @@ importers:
 
   .: {}
 
+  pkgs/aztec-private-counter: {}
+
+  pkgs/private_voting: {}
+
   pkgs/quickstart:
     dependencies:
       '@aztec/accounts':
@@ -25,6 +29,17 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
+
+  pkgs/sample-dapp:
+    dependencies:
+      '@aztec/accounts':
+        specifier: ^0.19.0
+        version: 0.19.0
+      '@aztec/aztec.js':
+        specifier: ^0.19.0
+        version: 0.19.0
+
+  pkgs/token_contract_tutorial: {}
 
 packages:
 
@@ -55,6 +70,25 @@ packages:
       - zod
     dev: false
 
+  /@aztec/accounts@0.19.0:
+    resolution: {integrity: sha512-dVGA31avfXALmXShkwkd2pgzFv+1qaJjmXUAGFJIQncmS4TFQjG1tqMA2APe2tSIVqxn3aWJa/qaETIn1ftV1Q==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/aztec.js': 0.19.0
+      '@aztec/circuit-types': 0.19.0
+      '@aztec/circuits.js': 0.19.0
+      '@aztec/ethereum': 0.19.0
+      '@aztec/foundation': 0.19.0
+      '@aztec/types': 0.19.0
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
   /@aztec/aztec.js@0.17.0(typescript@5.3.3):
     resolution: {integrity: sha512-yWRmKKoGyH77DffqitLnW1l/87PWINIXZ/fn/s2nxR5KjgWDlOUpk4qDnD4y4pwlcHBC69/nmd64O7j5X/tyQw==}
     engines: {node: '>=18'}
@@ -63,6 +97,24 @@ packages:
       '@aztec/ethereum': 0.17.0(typescript@5.3.3)
       '@aztec/foundation': 0.17.0
       '@aztec/types': 0.17.0(typescript@5.3.3)
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@aztec/aztec.js@0.19.0:
+    resolution: {integrity: sha512-Of8LZA1M+TRUS1fslTW6GseYFSoiN1QBlSWjEOCXk/WMYXHBi14aOYr1/DIKGeqd9Fxm60+zoLuizD18QKkDPQ==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/circuit-types': 0.19.0
+      '@aztec/circuits.js': 0.19.0
+      '@aztec/ethereum': 0.19.0
+      '@aztec/foundation': 0.19.0
+      '@aztec/types': 0.19.0
       tslib: 2.6.2
     transitivePeerDependencies:
       - bufferutil
@@ -84,12 +136,59 @@ packages:
       - supports-color
     dev: false
 
+  /@aztec/bb.js@0.19.0:
+    resolution: {integrity: sha512-I28AdggGl/5FjOEdOCYXviH0TnQUjEl2B95sux1kVJj8MiwD1rmx/tuaQBvUwRKe3hg/4C1KQRYWFn4vwlhg3A==}
+    hasBin: true
+    dependencies:
+      comlink: 4.4.1
+      commander: 10.0.1
+      debug: 4.3.4
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@aztec/circuit-types@0.19.0:
+    resolution: {integrity: sha512-hUI7AQwT5srva/OVHxGFpF9K7ZNIcqAy6nanI15hF7DkD1g8Kz05WqYnbMsk24jy40i2XgrHuyglQE9TIEL0RA==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/circuits.js': 0.19.0
+      '@aztec/ethereum': 0.19.0
+      '@aztec/foundation': 0.19.0
+      '@aztec/types': 0.19.0
+      browserify-cipher: 1.0.1
+      lodash.clonedeep: 4.5.0
+      lodash.isequal: 4.5.0
+      lodash.times: 4.3.2
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
   /@aztec/circuits.js@0.17.0:
     resolution: {integrity: sha512-EA8u8wwlftEKgJphWWsHX2po7X057oCAXMiwEss2IL2t+NIf8wlh3MtsoN5rfZ3socLBmh2bq8a3lnujPo5kaA==}
     engines: {node: '>=18'}
     dependencies:
       '@aztec/bb.js': 0.17.0
       '@aztec/foundation': 0.17.0
+      eslint: 8.56.0
+      lodash.chunk: 4.2.0
+      lodash.times: 4.3.2
+      tslib: 2.6.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@aztec/circuits.js@0.19.0:
+    resolution: {integrity: sha512-j5a2mvWSUoR96jwQEIWV1Dz0bcHXwL1KKpr3TTGVgQyWqaNl7f4j0Oba0R66WGw2pBtaxJOr23gM6h+hkm4Y1Q==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/bb.js': 0.19.0
+      '@aztec/foundation': 0.19.0
       eslint: 8.56.0
       lodash.chunk: 4.2.0
       lodash.times: 4.3.2
@@ -114,11 +213,54 @@ packages:
       - zod
     dev: false
 
+  /@aztec/ethereum@0.19.0:
+    resolution: {integrity: sha512-TRvFDjGlC5j+bUzXgpEhShHEwQq8Qb0siA9tLaOKQ2CHz05D50rp/9loa81R/pk39lDku3Z4wUmZ1BUasFgjLw==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/foundation': 0.19.0
+      dotenv: 16.3.1
+      tslib: 2.6.2
+      viem: 1.21.4(typescript@5.3.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
   /@aztec/foundation@0.17.0:
     resolution: {integrity: sha512-LqcTpMAK/+py66RLXl1lk5Z77AhVXYepWESxYTavn/0t51AhCcHoyd4ZpZMxYiNyMH5I45nHt4hGMKa9S76URA==}
     engines: {node: '>=18'}
     dependencies:
       '@aztec/bb.js': 0.17.0
+      '@koa/cors': 4.0.0
+      '@noble/curves': 1.3.0
+      bn.js: 5.2.1
+      debug: 4.3.4
+      detect-node: 2.1.0
+      elliptic: 6.5.4
+      hash.js: 1.1.7
+      koa: 2.15.0
+      koa-bodyparser: 4.4.1
+      koa-compress: 5.1.1
+      koa-router: 12.0.1
+      leveldown: 6.1.1
+      levelup: 5.1.1
+      lodash.clonedeepwith: 4.5.0
+      memdown: 6.1.1
+      pako: 2.1.0
+      sha3: 2.1.4
+      zod: 3.22.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@aztec/foundation@0.19.0:
+    resolution: {integrity: sha512-mWjTpgbLZhKO7mhjNBMalxqIlDACXhSLSzRI8PO00Bu+FwpxhFPUAPKvSPSdv4/JhQoX0/wzq+LRn/ge5WjDOg==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/bb.js': 0.19.0
       '@koa/cors': 4.0.0
       '@noble/curves': 1.3.0
       bn.js: 5.2.1
@@ -167,6 +309,20 @@ packages:
       lodash.isequal: 4.5.0
       lodash.times: 4.3.2
       tslib: 2.6.2
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - zod
+    dev: false
+
+  /@aztec/types@0.19.0:
+    resolution: {integrity: sha512-aC0Dbg+VTE3Aa4hTYFpH1uLMH61OWehZ0tHREmziG4JRk7HcB16vJJCSp5v5zL1lmtCOOjM9kO8eh0pJg3wL4g==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@aztec/ethereum': 0.19.0
+      '@aztec/foundation': 0.19.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color

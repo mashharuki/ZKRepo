@@ -1,0 +1,16 @@
+{
+  "name": "private-vote",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "compile": "aztec-nargo compile",
+    "generate": "aztec-cli codegen target -o src/artifacts --ts",
+    "deploy": "aztec-cli deploy ./src/artifacts/.json --args "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

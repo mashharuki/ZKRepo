@@ -57,7 +57,13 @@ echo "Deployed contract at $CONTRACT"
 aztec-cli check-deploy --contract-address $CONTRACT
 ```
 
-## サンプロコントラクト実装
+## サンプルコントラクト実装
+
+Noirプロジェクト作成方法
+
+```bash
+aztec-nargo new --contract private_voting
+```
 
 コンパイル
 

@@ -6,7 +6,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "compile": "cd ./contracts && aztec-nargo compile"
+    "compile": "cd ./contracts && aztec-nargo compile",
+    "generate": "cd ./contracts && aztec-cli codegen target -o src/artifacts --ts"
   },
   "keywords": [],
   "author": "",

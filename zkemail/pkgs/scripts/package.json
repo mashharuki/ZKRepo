@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "generateInput": "ts-node src/input.ts"
+  },
+  "@types/node": "^20.11.7",
+    "@zk-email/circuits": "^3.2.2",
+    "@zk-email/contracts": "^5.0.2",
+    "@zk-email/helpers": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+}

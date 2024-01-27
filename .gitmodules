@@ -1,3 +1,0 @@
-[submodule "zkemail/zk-regex"]
-	path = zkemail/zk-regex
-	url = https://github.com/mashharuki/zk-regex.git

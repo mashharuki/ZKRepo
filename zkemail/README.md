@@ -102,7 +102,13 @@ To get started with Prove.email, follow these steps:
      zk-regex-compiler 1.0.8
      ```
 
-  3. `simple_regex_decomposed.json`を作成する。
+  3. `simple_regex.circom`ファイルを生成する。  
+
+      ```bash
+      zk-regex decomposed -d ./packages/circom/tests/circuits/simple_regex_decomposed.json -c ./simple_regex.circom -t SimpleRegex -g true
+      ```
+
+      `simple_regex.circom`ファイルが生成される。
 
 
 ### 参考文献

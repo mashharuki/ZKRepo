@@ -9,7 +9,8 @@
   "private":true,
   "scripts": {
     "compile": "forge build",
-    "test": "forge test"
+    "test": "forge test",
+    "deploy:scrollTestnet": "forge script ./script/01_DeployTokenRegistry.s.sol --fork-url https://sepolia-rpc.scroll.io/ --broadcast --verify -vvvv"
   },
   "dependencies": {
     "@email-wallet/contracts": "https://gitpkg.now.sh/zkemail/email-wallet/packages/contracts?8ae807dfcfe617a1a3e4b5342a667f0f595b8c82",

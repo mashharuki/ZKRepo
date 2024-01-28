@@ -256,6 +256,12 @@ To get started with Prove.email, follow these steps:
         - "{recipient}":  
           受信者のメールアドレス、または受信者のイーサリアムアドレスの 16 進文字列。subjectParams の対応するパラメータは、メールアドレスまたはイーサリアムアドレスのバイトサイズを uint256 にエンコードしたバイトです。
 
+デプロイ方法
+
+```bash
+source ./pkgs/email-wallet-contract/.env
+```
+
 ### 参考文献
 
 1. [ZK Email Docs](https://zkemail.gitbook.io/zk-email/)

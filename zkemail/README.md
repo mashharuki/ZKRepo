@@ -267,3 +267,5 @@ To get started with Prove.email, follow these steps:
 7. [ZK Regex Tools Webstie](https://zkregex.com/)
 8. [ZK Wallet SDK Uniswap 拡張コントラクト例](https://github.com/zkemail/email-wallet/blob/main/packages/contracts/src/extensions/UniswapExtension.sol)
 9. [ZK Wallet SDK NFT 拡張コントラクト例](https://github.com/zkemail/email-wallet/blob/main/packages/contracts/src/extensions/NFTExtension.sol)
+10. [デプロイ用のサンプルスクリプト](https://github.com/zkemail/email-wallet/blob/main/packages/contracts/script/07_SetDefaultExtensions.s.sol)
+11. [Scroll デプロイメモ](https://github.com/scroll-tech/scroll-guides)

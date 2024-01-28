@@ -7,6 +7,9 @@ import {TokenRegistry} from "@email-wallet/src/utils/TokenRegistry.sol";
 import {ExtensionQuery} from "./ExtensionQuery.sol";
 import {StringUtils} from "./StringUtils.sol";
 
+/**
+ * ExtensionBase Contract
+ */
 abstract contract ExtensionBase is Extension, ExtensionQuery {
     EmailWalletCore public immutable core;
     string public extensionName;

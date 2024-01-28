@@ -9,13 +9,20 @@ import "@email-wallet/src/interfaces/Commands.sol";
 import {StringUtils} from "../src/helpers/StringUtils.sol";
 import "../src/MemoExtension.sol";
 
+/**
+ * MemoExtension Contract用のテストコード
+ */
 contract MemoExtensionTest is EmailWalletCoreTestHelper {
     using StringUtils for *;
 
     MemoExtension memoExtension;
 
+    /**
+     * 初期設定
+     */
     function setUp() public override {
         super.setUp();
+        // レイヤーとアカウント初期化を実行
         _registerRelayer();
         _registerAndInitializeAccount();
 
@@ -216,6 +223,7 @@ contract MemoExtensionTest is EmailWalletCoreTestHelper {
         vm.startPrank(relayer);
         vm.deal(relayer, unclaimedStateClaimGas * maxFeePerGas);
         daiToken.freeMint(walletAddr, 10 ether); // For fee reibursement
+        // execute EmailOp method
         (bool success, bytes memory err, , uint256 registeredUnclaimId) = core
             .handleEmailOp{value: unclaimedStateClaimGas * maxFeePerGas}(
             emailOp

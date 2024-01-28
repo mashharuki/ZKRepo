@@ -6,6 +6,9 @@ import "../src/MemoExtension.sol";
 import {EmailWalletCore} from "@email-wallet/src/EmailWalletCore.sol";
 import {ExtensionHandler} from "@email-wallet/src/handlers/ExtensionHandler.sol";
 
+/**
+ * デプロイ用のスクリプト
+ */
 contract Deploy is Script {
     uint256 constant maxFeePerGas = 2 gwei;
     uint256 constant emailValidityDuration = 1 hours;
@@ -17,6 +20,7 @@ contract Deploy is Script {
     string[][] uniswapExtTemplates = new string[][](1);
 
     function run() external {
+        // デプロイする秘密鍵の情報を取得する。
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         if (deployerPrivateKey == 0) {
             console.log("PRIVATE_KEY env var not set");
@@ -30,6 +34,7 @@ contract Deploy is Script {
         EmailWalletCore core = EmailWalletCore(payable(_core));
         ExtensionHandler extensionHandler = core.extensionHandler();
         vm.startBroadcast(deployerPrivateKey);
+        // デプロイ開始
         MemoExtension memoExt = new MemoExtension(address(core));
         string memory extensionName = memoExt.extensionName();
         string[][] memory executionTemplates = memoExt.getExecutionTemplates();

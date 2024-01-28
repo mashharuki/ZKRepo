@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "scripts:generateInput": "yarn workspace scripts generateInput",
-    "email-wallet-contract:compile": "yarn workspace email-wallet-contract compile"
+    "email-wallet-contract:compile": "yarn workspace email-wallet-contract compile",
+    "email-wallet-contract:test": "yarn workspace email-wallet-contract test"
   }
 }

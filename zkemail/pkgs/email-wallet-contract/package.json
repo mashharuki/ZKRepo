@@ -8,7 +8,8 @@
   "license": "MIT",
   "private":true,
   "scripts": {
-    "compile": "forge build"
+    "compile": "forge build",
+    "test": "forge test"
   },
   "dependencies": {
     "@email-wallet/contracts": "https://gitpkg.now.sh/zkemail/email-wallet/packages/contracts?8ae807dfcfe617a1a3e4b5342a667f0f595b8c82",

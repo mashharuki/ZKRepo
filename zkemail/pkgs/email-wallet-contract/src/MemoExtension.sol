@@ -7,6 +7,9 @@ import {ExtensionBase} from "./helpers/ExtensionBase.sol";
 import {StringUtils} from "./helpers/StringUtils.sol";
 import {EmailWalletHelper} from "./helpers/EmailWalletHelper.sol";
 
+/**
+ * MemoExtension Sample contract 
+ */
 contract MemoExtension is ExtensionBase {
     using StringUtils for *;
     using EmailWalletHelper for *;
@@ -32,6 +35,10 @@ contract MemoExtension is ExtensionBase {
     mapping(string => bytes32[]) public idsOfContents;
     mapping(address => bytes32[]) public idsOfRecipient;
 
+    /**
+     * コンストラクター
+     * @param coreAddr Coreアドレス
+     */
     constructor(address coreAddr) ExtensionBase(coreAddr) {}
 
     function defineExecutionTemplates()
@@ -49,6 +56,9 @@ contract MemoExtension is ExtensionBase {
         return templates;
     }
 
+    /**
+     * execute method
+     */
     function execute(
         uint8 templateIndex,
         bytes[] memory subjectParams,
@@ -61,8 +71,10 @@ contract MemoExtension is ExtensionBase {
             templateIndex == 0 || templateIndex == 1 || templateIndex == 2,
             "invalid template index"
         );
+        // メール本文から情報を読み取る。
         string memory contents = abi.decode(subjectParams[0], (string));
         require(bytes(contents).length > 0, "contents must not be empty");
+
         if (templateIndex == 0) {
             executeTemplateZero(wallet, emailNullifier, contents);
         } else if (templateIndex == 1) {
@@ -323,6 +335,7 @@ contract MemoExtension is ExtensionBase {
             memoOfId[memo.memoId] = memo;
             idsOfWriter[memo.writer].push(memo.memoId);
             idsOfContents[memo.contents].push(memo.memoId);
+            // registerUnclaimedStateAsExtension methodを呼び出す
             core.registerUnclaimedStateAsExtension(stateBytes);
         } else {
             require(recipientETHAddr != address(0), "invalid recipientETHAddr");
@@ -352,6 +365,7 @@ contract MemoExtension is ExtensionBase {
         bytes32 emailNullifier,
         string memory contents
     ) private {
+        // メール本文からトークンの名前と数量を取得する。
         (uint256 tokenAmount, string memory tokenName) = abi.decode(
             subjectParams[1],
             (uint256, string)
@@ -383,6 +397,7 @@ contract MemoExtension is ExtensionBase {
                     tokenAmount,
                 "token transfer failed"
             );
+            // registerUnclaimedStateAsExtension methodを呼び出す。
             core.registerUnclaimedStateAsExtension(stateBytes);
         } else {
             require(recipientETHAddr != address(0), "invalid recipientETHAddr");

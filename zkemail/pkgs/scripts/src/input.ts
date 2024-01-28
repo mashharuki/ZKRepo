@@ -1,12 +1,13 @@
-import { generateCircuitInputs } from "@zk-email/helpers/dist/input-helpers";
-import { verifyDKIMSignature } from "@zk-email/helpers/dist/dkim"
+
+import { verifyDKIMSignature } from "@zk-email/helpers/src/dkim";
+import { generateCircuitInputs } from "@zk-email/helpers/src/input-helpers";
 import fs from "fs";
 import path from "path";
 
 /**
  * generate input scirpt
  */
-async function main() {
+export async function main() {
   console.log(" =================================== [Start] =================================== ");
 
   const rawEmail = fs.readFileSync(

@@ -479,3 +479,16 @@ proof detail を取得する API で proof も生成できる。
   "error": null
 }
 ```
+
+Snarkjs と組み合わせて簡単に検証もできる！！
+
+```bash
+Proving circuit...
+inputData: {"X":1,"Y":1}
+proveResponse: null
+Poll exited after 1 seconds with status: Ready
+Circuit proofDetailResponse: [object Object]
+Circuit proof output signal: 1
+verifying my-circuit....
+Verification OK
+```

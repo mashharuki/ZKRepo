@@ -1,4 +1,5 @@
 const process = require("process");
+const snarkjs = require("snarkjs");
 const axios = require("axios");
 const fs = require("fs");
 require("dotenv").config();
@@ -81,8 +82,25 @@ async function main() {
     // Retrieve output from the proof.
     // VerificationKeyを含む情報を取得することができる。
     const publicOutput = proofDetailResponse.data.public[0];
-    console.log(`Circuit proofDetailResponse: ${proofDetailResponse.data.verification_key}`);
+    const publicSignals = proofDetailResponse.data.public;
+    const proofData = proofDetailResponse.data.proof;
+    // proofをファイルに書き込む。
+    fs.writeFileSync("./data/proof.json", JSON.stringify(proofData))
+    console.log(`Circuit proofDetailResponse: ${proofData}`);
     console.log(`Circuit proof output signal: ${publicOutput}`);
+
+    // verifyする。
+    console.log(`verifying my-circuit....`);
+    // verification keyを取得する。
+    const verification_key = JSON.parse(fs.readFileSync("./verification_key.json"));
+    // 検証
+    const res = await snarkjs.groth16.verify(verification_key, publicSignals, proofData);
+
+    if (res === true) {
+      console.log("Verification OK");
+    } else {
+      console.log("Invalid proof");
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message);

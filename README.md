@@ -803,3 +803,5 @@ ARGS:
 120. [PSE Resource](https://pse.dev/resources)
 121. [Ironfish Network](https://ironfish.network/)
 122. [GitHub - noir-starter](https://github.com/noir-lang/noir-starter/)
+123. [Sindri - API Docs](https://sindri.app/docs/reference/api/)
+124. [Sindri - GitHub - sindri-resources](https://github.com/Sindri-Labs/sindri-resources)

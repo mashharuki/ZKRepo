@@ -2,9 +2,10 @@
   "name": "sindri",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "my-circuit": "pnpm -F \"my-circuit\""
   },
   "keywords": [],
   "author": "",

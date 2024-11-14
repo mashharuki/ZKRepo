@@ -275,3 +275,4 @@ source ./pkgs/email-wallet-contract/.env
 9. [ZK Wallet SDK NFT 拡張コントラクト例](https://github.com/zkemail/email-wallet/blob/main/packages/contracts/src/extensions/NFTExtension.sol)
 10. [デプロイ用のサンプルスクリプト](https://github.com/zkemail/email-wallet/blob/main/packages/contracts/script/07_SetDefaultExtensions.s.sol)
 11. [Scroll デプロイメモ](https://github.com/scroll-tech/scroll-guides)
+12. [ZK Email SDK Registry](https://sdk.prove.email/)

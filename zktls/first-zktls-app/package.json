@@ -1,0 +1,17 @@
+{
+  "name": "first-zktls-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "pkgs/*"
+  ],
+  "scripts": {
+    "frontend": "yarn workspace frontend",
+    "backend": "yarn workspace backend"
+  }
+}

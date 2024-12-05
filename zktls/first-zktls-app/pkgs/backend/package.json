@@ -1,0 +1,74 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "1.0.0",
+  "files": [
+    "./lib",
+    "./contracts"
+  ],
+  "main": "./lib/index.js",
+  "license": "See License in <https://github.com/reclaimprotocol/.github/blob/main/LICENSE>",
+  "bugs": {
+    "url": "https://github.com/reclaimprotocol/reclaim-solidity-sdk/issues"
+  },
+  "homepage": "https://github.com/reclaimprotocol/reclaim-solidity-sdk/",
+  "scripts": {
+    "test": "npx hardhat test",
+    "build": "npx hardhat compile",
+    "build:tsc": "tsc",
+    "deploy": "npx hardhat deploy",
+    "run:local": "NETWORK=hardhat hardhat run scripts/local-node.ts",
+    "prettier": "prettier --write contracts/*.sol contracts/**/*.sol"
+  },
+  "devDependencies": {
+    "@adiwajshing/eslint-config": "github:adiwajshing/eslint-config",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@oasisprotocol/sapphire-hardhat": "^2.19.4",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "@reclaimprotocol/crypto-sdk": "file:./crypto-sdk",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.16.19",
+    "chai": "^4.3.7",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.45.0",
+    "ethers": "^5.7.2",
+    "flat": "^5.0.2",
+    "hardhat": "^2.17.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "husky": "^8.0.3",
+    "minimatch": "^3.1.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-solidity": "^1.1.3",
+    "solhint": "^3.4.1",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.8.4",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.0",
+    "typescript": "^4.9.5",
+    "uuid": "^9.0.0"
+  },
+  "dependencies": {
+    "@okxweb3/hardhat-explorer-verify": "^1.6.4",
+    "@openzeppelin/contracts": "^4.9.2",
+    "@semaphore-protocol/contracts": "^3.11.1",
+    "@semaphore-protocol/data": "^3.11.1",
+    "@semaphore-protocol/group": "^3.11.1",
+    "@semaphore-protocol/hardhat": "^3.11.1",
+    "@semaphore-protocol/identity": "^3.11.1",
+    "@semaphore-protocol/proof": "^3.11.1",
+    "alchemy-sdk": "^2.9.2",
+    "operator-filter-registry": "^1.4.2"
+  },
+  "overrides": {
+    "flat": "$flat",
+    "minimatch": "$minimatch",
+    "uuid": "$uuid"
+  }
+}

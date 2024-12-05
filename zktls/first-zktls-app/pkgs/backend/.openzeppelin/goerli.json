@@ -1,0 +1,557 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x69fce93E36B6CC14995d249b9e6C8D18a026aA55",
+      "txHash": "0xbe80518edc5a842bcc1d843089608c04635b633b015d9a969965415df48a426f",
+      "kind": "uups"
+    },
+    {
+      "address": "0x6Db8998E27100F1c95264448a90253B0B84681e6",
+      "txHash": "0xae53c00cae27282a1b7425245ca3d08d459efd80404e8f226824a01e0e0da998",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "2beb39b0bfb33ee2739c67152e299ec02eac662f4ab33c863d48cd0f432fb720": {
+      "address": "0x87e49D0BD41d5B8b94d41454F79Eeb1Ec721230c",
+      "txHash": "0xc945948ac3c76d000a7d376cf34635f390b3043ff3eb28d686a22e64acbefb86",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "witnesses",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_struct(Witness)2632_storage)dyn_storage",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:29"
+          },
+          {
+            "label": "credentialMints",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_uint256,t_struct(CredentialMint)2646_storage)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:31"
+          },
+          {
+            "label": "latestRequestId",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:33"
+          },
+          {
+            "label": "mintFees",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_uint256",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:35"
+          },
+          {
+            "label": "scFeesKeepPercentage",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_uint8",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:37"
+          },
+          {
+            "label": "minimumWitnessesForCredentialMint",
+            "offset": 1,
+            "slot": "205",
+            "type": "t_uint8",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:39"
+          },
+          {
+            "label": "witnessWhitelistMap",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:41"
+          },
+          {
+            "label": "usedExpiryTimestamps",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_mapping(t_uint64,t_bool)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:43"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Witness)2632_storage)dyn_storage": {
+            "label": "struct Reclaim.Witness[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(CredentialMint)2646_storage)": {
+            "label": "mapping(uint256 => struct Reclaim.CredentialMint)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint64,t_bool)": {
+            "label": "mapping(uint64 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Credential)3348_storage": {
+            "label": "struct Credentials.Credential",
+            "members": [
+              {
+                "label": "infoHash",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestampS",
+                "type": "t_uint32",
+                "offset": 20,
+                "slot": "1"
+              },
+              {
+                "label": "claimId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(CredentialMint)2646_storage": {
+            "label": "struct Reclaim.CredentialMint",
+            "members": [
+              {
+                "label": "credential",
+                "type": "t_struct(Credential)3348_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestor",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "feesPaid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "assignedWitnesses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(Witness)2632_storage": {
+            "label": "struct Reclaim.Witness",
+            "members": [
+              {
+                "label": "addr",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "host",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "fd1ff0092473638fec335e0ed7f78b9bcaf28b2a5bb177ccac132f8b966f1a66": {
+      "address": "0x3D414EB21036a27EeE9791e2Bf7795D0F4FE61Ce",
+      "txHash": "0x7b78ed72cb490e3a717cc8e0ed00bc1a56d426f37239bd6b16aa647491257cc4",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "witnesses",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_struct(Witness)2632_storage)dyn_storage",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:29"
+          },
+          {
+            "label": "claimCreations",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_uint256,t_struct(ClaimCreate)2646_storage)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:31"
+          },
+          {
+            "label": "latestRequestId",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_uint256",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:33"
+          },
+          {
+            "label": "createFees",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_uint256",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:35"
+          },
+          {
+            "label": "scFeesKeepPercentage",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_uint8",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:37"
+          },
+          {
+            "label": "minimumWitnessesForClaimCreation",
+            "offset": 1,
+            "slot": "205",
+            "type": "t_uint8",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:39"
+          },
+          {
+            "label": "witnessWhitelistMap",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:41"
+          },
+          {
+            "label": "usedExpiryTimestamps",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_mapping(t_uint64,t_bool)",
+            "contract": "Reclaim",
+            "src": "contracts/Reclaim.sol:43"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(Witness)2632_storage)dyn_storage": {
+            "label": "struct Reclaim.Witness[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(ClaimCreate)2646_storage)": {
+            "label": "mapping(uint256 => struct Reclaim.ClaimCreate)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint64,t_bool)": {
+            "label": "mapping(uint64 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Claim)3348_storage": {
+            "label": "struct Claims.Claim",
+            "members": [
+              {
+                "label": "infoHash",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "timestampS",
+                "type": "t_uint32",
+                "offset": 20,
+                "slot": "1"
+              },
+              {
+                "label": "claimId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(ClaimCreate)2646_storage": {
+            "label": "struct Reclaim.ClaimCreate",
+            "members": [
+              {
+                "label": "claim",
+                "type": "t_struct(Claim)3348_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "requestor",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "feesPaid",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "assignedWitnesses",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(Witness)2632_storage": {
+            "label": "struct Reclaim.Witness",
+            "members": [
+              {
+                "label": "addr",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "host",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

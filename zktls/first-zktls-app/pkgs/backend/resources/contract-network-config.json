@@ -1,0 +1,614 @@
+{
+  "networks": {
+    "linea-goerli": {
+      "Semaphore": {
+        "address": "0xd9692F91DC89f14f4211fa07aD2Bd1E9aD99D953",
+        "explorer": "https://explorer.goerli.linea.build/address/0xd9692F91DC89f14f4211fa07aD2Bd1E9aD99D953"
+      },
+      "SemaphoreVeriefier": {
+        "address": "0xD594971cea3fb43Dd3d2De87C216ac2aCE320fc2",
+        "explorer": "https://explorer.goerli.linea.build/address/0xD594971cea3fb43Dd3d2De87C216ac2aCE320fc2"
+      },
+      "Reclaim": {
+        "address": "0xf223E215B2c9A2E5FE1B2971d5694684b2E734C1",
+        "explorer": "https://explorer.goerli.linea.build/address/0xf223E215B2c9A2E5FE1B2971d5694684b2E734C1"
+      },
+      "Router": {
+        "address": "0x0412a3Bfbd9871DB519e449aBeaa3CAE4E89eB4B",
+        "explorer": "https://explorer.goerli.linea.build/address/0x0412a3Bfbd9871DB519e449aBeaa3CAE4E89eB4B"
+      },
+      "AttestationRegistry": {
+        "address": "0x7A2B692c8c46715727ae8b2BFb6259a1A1113fA0",
+        "explorer": "https://explorer.goerli.linea.build/address/0x7A2B692c8c46715727ae8b2BFb6259a1A1113fA0"
+      },
+      "ModuleRegistry": {
+        "address": "0x4A79C4fBe6c2F849D0fD4da8c24214491BaF41cd",
+        "explorer": "https://explorer.goerli.linea.build/address/0x4A79C4fBe6c2F849D0fD4da8c24214491BaF41cd"
+      },
+      "PortalRegistry": {
+        "address": "0xB51FCb41fF11e0445600f63D8c38f955DcCB0B2c",
+        "explorer": "https://explorer.goerli.linea.build/address/0xB51FCb41fF11e0445600f63D8c38f955DcCB0B2c"
+      },
+      "SchemaRegistry": {
+        "address": "0xEbBbc3A976A81AE54938E09F297ab7313E00D6a5",
+        "explorer": "https://explorer.goerli.linea.build/address/0xEbBbc3A976A81AE54938E09F297ab7313E00D6a5"
+      },
+      "ReclaimPortal": {
+        "address": "0x798c6B325671E6bA13c03Cb8B208d708F58B0f39",
+        "explorer": "https://explorer.goerli.linea.build/address/0x798c6B325671E6bA13c03Cb8B208d708F58B0f39"
+      },
+      "UserMerkelizerModule": {
+        "address": "0xd1cdF9B236c0f56D20d90a7F8129D129e4cEb7DB",
+        "explorer": "https://explorer.goerli.linea.build/address/0xd1cdF9B236c0f56D20d90a7F8129D129e4cEb7DB"
+      }
+    },
+    "opt-goerli": {
+      "IncrementalBinaryTree": {
+        "address": "0x75fA0F92fA3e5a99e8dD65007920a52f7CECdd5d",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x6D1E82F1A418163c739F203A942065fba86ef529",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x2C96f4227295cA6fA9eD80a4eC4fb11507da3367",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x1B5C1e0DFfeae20716508F2B7AD5fA39ea52eb7e",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x2f0306D698685BEf7ff50745BFF7178F0d117ba8",
+        "explorer": ""
+      },
+      "Router": {
+        "address": "0x2C1fcAF923EcA3a587247bf6Ee00f01881509ff4",
+        "explorer": ""
+      },
+      "AttestationRegistry": {
+        "address": "0xBcfD2cf1c3ae17fDee5110fE31347839f06Dfe47",
+        "explorer": ""
+      },
+      "ModuleRegistry": {
+        "address": "0x1Da4C5359531930bE37e0Dd331f729Bb86505814",
+        "explorer": ""
+      },
+      "PortalRegistry": {
+        "address": "0xC29673d9a8b0Fba737E308309Fc7cb1d2f4457fC",
+        "explorer": ""
+      },
+      "SchemaRegistry": {
+        "address": "0x54F16e695A3e1c737a62d5D7a17CF3CB41356383",
+        "explorer": ""
+      },
+      "ReclaimPortal": {
+        "address": "0x5Da495e845f9242766AD97E8D09EAcc4004aBeDc",
+        "explorer": ""
+      },
+      "UserMerkelizerModule": {
+        "address": "0x7E1E9871b4251c0b5E9Eb6FEb64F5bfe5D228237",
+        "explorer": ""
+      }
+    },
+    "polygon-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0xACE04E6DeB9567C1B8F37D113F2Da9E690Fc128d",
+        "explorer": "https://polygonscan.com/address/0xACE04E6DeB9567C1B8F37D113F2Da9E690Fc128d"
+      },
+      "Pairing": {
+        "address": "0x93a9d327836A5279E835EF3147ac1fb54FBd726B",
+        "explorer": "https://polygonscan.com/address/0x93a9d327836A5279E835EF3147ac1fb54FBd726B"
+      },
+      "SemaphoreVerifier": {
+        "address": "0x41488b9509d6A9143E9b022064D44743e63eD885",
+        "explorer": "https://polygonscan.com/address/0x41488b9509d6A9143E9b022064D44743e63eD885"
+      },
+      "Semaphore": {
+        "address": "0xF90085f5Fd1a3bEb8678623409b3811eCeC5f6A5",
+        "explorer": "https://polygonscan.com/address/0xF90085f5Fd1a3bEb8678623409b3811eCeC5f6A5"
+      },
+      "Reclaim": {
+        "address": "0xd6534f52CEB3d0139b915bc0C3278a94687fA5C7",
+        "explorer": "https://polygonscan.com/address/0xd6534f52CEB3d0139b915bc0C3278a94687fA5C7"
+      }
+    },
+    "arbitrum-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      }
+    },
+    "opt-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": "https://optimistic.etherscan.io/address/0x69B87bE50957506A11d40EC670435Cf6f3e36fFA"
+      },
+      "Pairing": {
+        "address": "0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5",
+        "explorer": "https://optimistic.etherscan.io/address/0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5"
+      },
+      "SemaphoreVerifier": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": "https://optimistic.etherscan.io/address/0x058C9A4D97f338fdec082da0E2965ac3E9191b65"
+      },
+      "Semaphore": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": "https://optimistic.etherscan.io/address/0x9c04BEb93d3c84f94A89e4102a24475e29084dBE"
+      },
+      "Reclaim": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": "https://optimistic.etherscan.io/address/0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91"
+      }
+    },
+    "polygon-mumbai": {
+      "IncrementalBinaryTree": {
+        "address": "0x9bfAccAF7E28828d6ba4CE6135a552DB6429ff7C",
+        "explorer": "https://mumbai.polygonscan.com/address/0x9bfAccAF7E28828d6ba4CE6135a552DB6429ff7C"
+      },
+      "Pairing": {
+        "address": "0x0E2CF8810B11c2875246d634f030897e77491680",
+        "explorer": "https://mumbai.polygonscan.com/address/0x0E2CF8810B11c2875246d634f030897e77491680"
+      },
+      "SemaphoreVerifier": {
+        "address": "0x88cEd91D4966D82912774B9fdf9ca4E065881a91",
+        "explorer": "https://mumbai.polygonscan.com/address/0x88cEd91D4966D82912774B9fdf9ca4E065881a91"
+      },
+      "Semaphore": {
+        "address": "0x93a9d327836A5279E835EF3147ac1fb54FBd726B",
+        "explorer": "https://mumbai.polygonscan.com/address/0x93a9d327836A5279E835EF3147ac1fb54FBd726B"
+      },
+      "Reclaim": {
+        "address": "0xd6534f52CEB3d0139b915bc0C3278a94687fA5C7",
+        "explorer": "https://mumbai.polygonscan.com/address/0xd6534f52CEB3d0139b915bc0C3278a94687fA5C7"
+      }
+    },
+    "bsc": {
+      "IncrementalBinaryTree": {
+        "address": "0x1634F2866E3a561f12aF62A8297D20E61a5058f2",
+        "explorer": "https://bscscan.com/address/0x1634F2866E3a561f12aF62A8297D20E61a5058f2"
+      },
+      "Pairing": {
+        "address": "0x8eccfeF7f3A327483D6405B10Be87C2B31F76f6d",
+        "explorer": "https://bscscan.com/address/0x8eccfeF7f3A327483D6405B10Be87C2B31F76f6d"
+      },
+      "SemaphoreVerifier": {
+        "address": "0x8CDc031d5B7F148ab0435028B16c682c469CEfC3",
+        "explorer": "https://bscscan.com/address/0x8CDc031d5B7F148ab0435028B16c682c469CEfC3"
+      },
+      "Semaphore": {
+        "address": "0x60d26d3BE0c424Dc0dcC062DFB5bcB2DB07b961A",
+        "explorer": "https://bscscan.com/address/0x60d26d3BE0c424Dc0dcC062DFB5bcB2DB07b961A"
+      },
+      "Reclaim": {
+        "address": "0x1bbb0896aC6F4E32a89157C73Fb830325a441cb9",
+        "explorer": "https://bscscan.com/address/0x1bbb0896aC6F4E32a89157C73Fb830325a441cb9"
+      }
+    },
+    "bsc-testnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x4FC5dfb65f405FEa2D5D344a00A96972C8f8feA8",
+        "explorer": "https://testnet.bscscan.com/address/0x4FC5dfb65f405FEa2D5D344a00A96972C8f8feA8"
+      },
+      "Pairing": {
+        "address": "0xb05AC87859AA48BBdEf0d3B5429eCca4Cad38336",
+        "explorer": "https://testnet.bscscan.com/address/0xb05AC87859AA48BBdEf0d3B5429eCca4Cad38336"
+      },
+      "SemaphoreVerifier": {
+        "address": "0x58fd47bB41De4cC400B564640E71b04C9D2164de",
+        "explorer": "https://testnet.bscscan.com/address/0x58fd47bB41De4cC400B564640E71b04C9D2164de"
+      },
+      "Semaphore": {
+        "address": "0x9E2C7869d074BfD6234a11a3651907c94Ca68166",
+        "explorer": "https://testnet.bscscan.com/address/0x9E2C7869d074BfD6234a11a3651907c94Ca68166"
+      },
+      "Reclaim": {
+        "address": "0x276E2ec16ef24b3D012b73bB03113259fC5a9028",
+        "explorer": "https://testnet.bscscan.com/address/0x276E2ec16ef24b3D012b73bB03113259fC5a9028"
+      }
+    },
+    "base-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x8B4dd301534B4c701cf0A96e03C6d556DdE05808",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xd9692F91DC89f14f4211fa07aD2Bd1E9aD99D953",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x1cf14e7F31F6A2Af830A7280d26d3Efac7FF4E0f",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x88122A1f2a791d6295517260c80A914b9a829299",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x15d267946ae3134429fC7b5895B91FE17935D042",
+        "explorer": ""
+      }
+    },
+    "arbitrum-sepolia": {
+      "IncrementalBinaryTree": {
+        "address": "0xB500E8372D4D247151f5037F484da6f93947716A",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0xe4377A529A47Ba2fBE34EfA6B0a4A8cD12eb93BC",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x02991C5f64a463C41dE158692Cc5A603cAA2ad00",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x4D1ee04EB5CeE02d4C123d4b67a86bDc7cA2E62A",
+        "explorer": ""
+      }
+    },
+    "oasis-sapphire-testnet": {
+      "IncrementalBinaryTree": {
+        "address": "0xD4cf4CBD9B7A1B3D7daFD1f8615090E173449D61",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x7046D8F316Af080F861CD4573acFda629D1C8E20",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x3B19608F6b08AFcf025Ee7257A37A0267d8a2D2D",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0xa4CDE1653aC39739EA48982812745E05C447F9Ad",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x2973E4147313d87DC576a09Cc5D34026A7e0de4F",
+        "explorer": ""
+      }
+    },
+    "oasis-sapphire-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x7046D8F316Af080F861CD4573acFda629D1C8E20",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x4aF7676DEAD1d21a6f157ff014BD088836659EC4",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0xcd94A4f7F85dFF1523269C52D0Ab6b85e9B22866",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x3B19608F6b08AFcf025Ee7257A37A0267d8a2D2D",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x87770899a8aF503Af5C319042b47313A09Db4Ef7",
+        "explorer": ""
+      }
+    },
+    "hedera-testnet": {
+      "IncrementalBinaryTree": { "address": "", "explorer": "" },
+      "Pairing": { "address": "", "explorer": "" },
+      "SemaphoreVerifier": { "address": "", "explorer": "" },
+      "Semaphore": { "address": "", "explorer": "" },
+      "Reclaim": {
+        "address": "0xaE72f9Ab6854965dFEd0fBBD5d6BA1187e512071",
+        "explorer": ""
+      }
+    },
+    "hedera-mainnet": {
+      "IncrementalBinaryTree": { "address": "", "explorer": "" },
+      "Pairing": { "address": "", "explorer": "" },
+      "SemaphoreVerifier": { "address": "", "explorer": "" },
+      "Semaphore": { "address": "", "explorer": "" },
+      "Reclaim": {
+        "address": "0x2a0a2c9f1f2cc87c6f167528cabadde25bbe170d",
+        "explorer": ""
+      }
+    },
+    "polygon-amoy": {
+      "IncrementalBinaryTree": {
+        "address": "0x7bc540E9F61edF5F5A8f7B33FD654d0055Ed1979",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x7B1bcafc8494e697A4D037E114325864A11F4803",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0xB500E8372D4D247151f5037F484da6f93947716A",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x4D1ee04EB5CeE02d4C123d4b67a86bDc7cA2E62A",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0xcd94A4f7F85dFF1523269C52D0Ab6b85e9B22866",
+        "explorer": ""
+      }
+    },
+    "avalanche-testnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x02991C5f64a463C41dE158692Cc5A603cAA2ad00",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xe4377A529A47Ba2fBE34EfA6B0a4A8cD12eb93BC",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x7B1bcafc8494e697A4D037E114325864A11F4803",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x7bc540E9F61edF5F5A8f7B33FD654d0055Ed1979",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x4aF7676DEAD1d21a6f157ff014BD088836659EC4",
+        "explorer": ""
+      }
+    },
+    "avalanche-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x5E3477f716Ea9Bf7Be2E275b4c2FCD0aFf532E19",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x0B999A5D54a20283F22DD6529e8eeB3D72caBE94",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0xe4377A529A47Ba2fBE34EfA6B0a4A8cD12eb93BC",
+        "explorer": ""
+      }
+    },
+    "okx-xlayer-testnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      }
+    },
+    "okx-xlayer-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0xe4377A529A47Ba2fBE34EfA6B0a4A8cD12eb93BC",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x7B1bcafc8494e697A4D037E114325864A11F4803",
+        "explorer": ""
+      }
+    },
+    "redbelly-mainnet": {
+      "IncrementalBinaryTree": { "address": "", "explorer": "" },
+      "Pairing": { "address": "", "explorer": "" },
+      "SemaphoreVerifier": { "address": "", "explorer": "" },
+      "Semaphore": { "address": "", "explorer": "" },
+      "Reclaim": { "address": "", "explorer": "" }
+    },
+    "redbelly-devnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x0B999A5D54a20283F22DD6529e8eeB3D72caBE94",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x5E3477f716Ea9Bf7Be2E275b4c2FCD0aFf532E19",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x7B1bcafc8494e697A4D037E114325864A11F4803",
+        "explorer": ""
+      }
+    },
+    "rootstock-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x0B999A5D54a20283F22DD6529e8eeB3D72caBE94",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x5E3477f716Ea9Bf7Be2E275b4c2FCD0aFf532E19",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x7B1bcafc8494e697A4D037E114325864A11F4803",
+        "explorer": ""
+      }
+    },
+    "rootstock-testnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      }
+    },
+    "manta-mainnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x69B87bE50957506A11d40EC670435Cf6f3e36fFA",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0xEC843FAA80023aFe0F228BE6585DfF6d721E98D5",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x058C9A4D97f338fdec082da0E2965ac3E9191b65",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x9c04BEb93d3c84f94A89e4102a24475e29084dBE",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0x9F0472FD02Ca1BC2d6C3A1702803Ba822C7C7E91",
+        "explorer": ""
+      }
+    },
+    "manta-testnet": {
+      "IncrementalBinaryTree": { "address": "", "explorer": "" },
+      "Pairing": { "address": "", "explorer": "" },
+      "SemaphoreVerifier": { "address": "", "explorer": "" },
+      "Semaphore": { "address": "", "explorer": "" },
+      "Reclaim": { "address": "", "explorer": "" }
+    },
+    "celo-alfajores": {
+      "IncrementalBinaryTree": {
+        "address": "0x9bfAccAF7E28828d6ba4CE6135a552DB6429ff7C",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x0E2CF8810B11c2875246d634f030897e77491680",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x88cEd91D4966D82912774B9fdf9ca4E065881a91",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x93a9d327836A5279E835EF3147ac1fb54FBd726B",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0xe79A453bD088F4A58656b315a7C1f8Ea3473CCf1",
+        "explorer": ""
+      }
+    },
+    "plume-devnet": {
+      "IncrementalBinaryTree": {
+        "address": "0x94521c2e16EF1F2682b59918E3b20459fDF48756",
+        "explorer": ""
+      },
+      "Pairing": {
+        "address": "0x7281630E4346dd4c0B7AE3B4689c1d0102741410",
+        "explorer": ""
+      },
+      "SemaphoreVerifier": {
+        "address": "0x4b11e09dC8b0AE67ba3795205eeAf51a3BBc19fc",
+        "explorer": ""
+      },
+      "Semaphore": {
+        "address": "0x97e611Fa537174D81E5FcF352Ea424c35B06D2ba",
+        "explorer": ""
+      },
+      "Reclaim": {
+        "address": "0xFAa4bD0487030005341cfa8e26bfBfede2B1D074",
+        "explorer": ""
+      }
+    },
+    "odyssey-testnet": {
+        "IncrementalBinaryTree": {
+          "address": "0x9bfAccAF7E28828d6ba4CE6135a552DB6429ff7C",
+          "explorer": ""
+        },
+        "Pairing": {
+          "address": "0x0E2CF8810B11c2875246d634f030897e77491680",
+          "explorer": ""
+        },
+        "SemaphoreVerifier": {
+          "address": "0x88cEd91D4966D82912774B9fdf9ca4E065881a91",
+          "explorer": ""
+        },
+        "Semaphore": {
+          "address": "0x93a9d327836A5279E835EF3147ac1fb54FBd726B",
+          "explorer": ""
+        },
+        "Reclaim": {
+          "address": "0xe79A453bD088F4A58656b315a7C1f8Ea3473CCf1",
+          "explorer": ""
+        }
+      }
+  }
+}

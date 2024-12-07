@@ -16,6 +16,8 @@
     "test": "npx hardhat test",
     "build": "npx hardhat compile",
     "build:tsc": "tsc",
+    "build:crypto-sdk": "cd crypto-sdk && yarn build",
+    "cp:crypto-sdk": "cp -r crypto-sdk/build node_modules/@reclaimprotocol/crypto-sdk/build",
     "deploy": "npx hardhat deploy",
     "run:local": "NETWORK=hardhat hardhat run scripts/local-node.ts",
     "prettier": "prettier --write contracts/*.sol contracts/**/*.sol"

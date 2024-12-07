@@ -2,6 +2,17 @@
 
 ## 動かし方
 
+- セットアップ
+
+  `/pkgs/backend/.env`ファイルを作成する。
+
+  ```txt
+  ALCHEMY_API_KEY=""
+  PRIVATE_KEY=""
+  ARBISCAN_API_KEY=""
+  NETWORK="arbitrum-sepolia"
+  ```
+
 - インストール
 
   ```bash
@@ -20,7 +31,7 @@
   yarn backend test
   ```
 
-- デプロイ
+- コントラクトのデプロイ
 
   ```bash
   yarn backend deploy
@@ -36,4 +47,16 @@
   Semaphore contract has been deployed to: 0xa9322C8424580E0b38F3E90FdDC73e009609fB4b
   Reclaim Implementation deployed to: 0x8fbcf4B62c1393C4472B26Ca496F0872b511145F
   Reclaim Proxy deployed to:  0xD41E1A91876c237521522DbD5ef2985e6afE1AD9
+  ```
+
+- フロントエンドのビルド
+
+  ```bash
+  yarn frontend build
+  ```
+
+- フロントエンドのデプロイ
+
+  ```bash
+  yarn frontend dev
   ```

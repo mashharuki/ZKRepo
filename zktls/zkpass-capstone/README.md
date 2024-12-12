@@ -187,3 +187,19 @@ export default tseslint.config({
   "recipient": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072"
 }
 ```
+
+別のZKProof
+
+```json
+{
+  "taskId": "d7365ca4a0cc4b4c91bf26d3173ccdd7",
+  "publicFields": [],
+  "allocatorAddress": "0x19a567b3b212a5b35bA0E3B600FbEd5c2eE9083d",
+  "publicFieldsHash": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+  "allocatorSignature": "0x42db60e4c6c7db1b192ac52278e0f5bbb99f4401400c17318d7c766ea3b1b6ee73f3921495c3d02648aaeedbe20ec86bfe492a170d160c7647dca176ab5cc7091c",
+  "uHash": "0xe8317c6bd033f26592b8d484ee279f1fe1062c77071811c1f8824682e62d5bb3",
+  "validatorAddress": "0xb1C4C1E1Cdd5Cf69E27A3A08C8f51145c2E12C6a",
+  "validatorSignature": "0x15df9fbfaf9f95d4dfce2943bb1f4e23c6ba8f6d8bd12f83a259d84bea02c80c75c3d27b74561306b332603b181c5731856dac0046e839b855ffcad8d508cfd31c",
+  "recipient": "0x51908F598A5e0d8F1A3bAbFa6DF76F9704daD072"
+}
+```

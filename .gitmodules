@@ -1,3 +1,23 @@
 [submodule "zktls/secret/lib/forge-std"]
 	path = zktls/secret/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "contracts/lib/forge-std"]
+	path = succinct/fibonacci/contracts/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+	tag = v1.8.2
+[submodule "contracts/lib/sp1-contracts"]
+	path = succinct/fibonacci/contracts/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+	tag = v3.0.0
+[submodule "contracts/lib/forge-std"]
+	path = succinct/project/contracts/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+	tag = v1.8.2
+[submodule "contracts/lib/sp1-contracts"]
+	path = succinct/project/contracts/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+	tag = v3.0.0
+[submodule "contracts/lib/forge-std"]
+	path = zk_multiplier_dapp/pkgs/backend/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+	tag = v1.8.2
